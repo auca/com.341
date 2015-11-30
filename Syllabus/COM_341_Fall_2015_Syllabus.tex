@@ -15,6 +15,8 @@
     urlcolor=black
 }
 
+\newcommand{\R}[1]{\uppercase\expandafter{\romannumeral #1\relax}}
+
 \begin{document}
 
     \title{COM 341, Operating Systems}
@@ -33,7 +35,7 @@
             \item[Course Repository]\hfill\\
                 \url{https://github.com/auca/com.341}
             \item[Place]\hfill\\
-                AUCA new campus, room G30
+                AUCA, laboratory G30
             \item[Time]\hfill\\
                 Monday 9:25\\
                 Friday 9:25
@@ -41,7 +43,7 @@
 
     \section{Prerequisites}
 
-        COM 112, Programming \uppercase\expandafter{\romannumeral 2\relax}. Object Oriented Design and GUI Programming
+        COM 112, Programming \R{2}. Object Oriented Design and GUI Programming
 
         \section{Contact Information}
 
@@ -50,71 +52,84 @@
                     Toksaitov Dmitrii Alexandrovich\\
                     \href{mailto:toksaitov_d@auca.kg}{toksaitov\_d@auca.kg}
                 \item[Office]\hfill\\
-                    AUCA new campus, room 315
+                    AUCA, room 315
                 \item[Office Hours]\hfill\\
-                    \begin{itemize}
-                        \item Monday 10:40--12:45
-                        \item Wednesday 14:00--15:00
-                        \item Friday 9:15--10:15
-                    \end{itemize}
+                    Monday 10:40--12:45\\
+                    Wednesday 14:00--15:00\\
+                    Friday 9:15--10:15
             \end{description}
 
     \section{Course Overview}
 
-        This course introduces students to the fundamentals of operating systems design and implementation. Topics include an overview of the components of an operating system, synchronization, implementation of processes, scheduling algorithms, memory management and file systems. This course is designed for Software Engineering majors and minors.
+        This course introduces students to the fundamentals of operating systems
+        design and implementation. Topics include an overview of the components
+        of an operating system, synchronization, implementation of processes,
+        scheduling algorithms, memory management and file systems. This course
+        is designed for Software Engineering majors and minors.
 
     \section{Topics Covered}
 
         \begin{description}
             \item[Processes]\hfill\\
-                 \begin{itemize}
-                    \item Scheduling
-                    \item Interprocess Communication
-                 \end{itemize}
+                Scheduling\\
+                Interprocess Communication
             \item[Memory Management]\hfill\\
-                 \begin{itemize}
-                    \item Segmentation
-                    \item Virtual Memory Management
-                    \item Page Replacement Algorithms 
-                    \item Swapping
-                 \end{itemize}
+                Segmentation\\
+                Virtual Memory Management\\
+                Page Replacement Algorithms\\
+                Swapping
             \item[File Systems]\hfill\\
-                \begin{itemize}
-                    \item File System Implementation
-                    \item Protection Mechanisms
-                 \end{itemize}
+                File System Implementation\\
+                Protection Mechanisms
             \item[Input \& Output]\hfill\\
-                \begin{itemize}
-                   \item Principles of I/O Hardware \& Software
-                   \item Deadlocks
-                   \item RAM Disks
-                   \item Disks
-                   \item Terminals
-                \end{itemize}
+                Principles of I/O Hardware \& Software\\
+                Deadlocks\\
+                RAM Disks\\
+                Disks\\
+                Terminals
         \end{description}
 
     \section{Practice Tasks \& Quizzes}
 
-        Students are required to finish 5 practice tasks during the course. These tasks are based on topics discussed during lectures. Each task should be finished during the class to receive a grade.
+        Students are required to finish 3 practice tasks during the course.
+        These tasks are based on topics discussed during lectures. Each task
+        should be finished during the class to receive a grade.
 
-        Students will get four quizzes throughout the course on topics discussed during previous classes.
+        Students will get four quizzes throughout the course on topics discussed
+        during classes.
 
     \section{Course Project}
 
-        The course project is to develop a limited simulation of an OS kernel on top of a virtual computer system. For educational and experimental purposes different approaches should be used and each solution should be analyzed and compared with others.
+        The course project is to develop a limited simulation of an OS kernel on
+        top of a virtual computer system. For educational and experimental
+        purposes different approaches should be used and each solution should be
+        analyzed and compared with others.
 
     \section{Reading}
 
-        Operating Systems Design and Implementation, Third Edition by Andrew S. Tanenbaum (AUCA Library Call Number: QA76.76.O63 T35 2006, ISBN: 978-0131429383)
+        Operating Systems Design and Implementation, Third Edition by Andrew S.
+        Tanenbaum (AUCA Library Call Number: QA76.76.O63 T35 2006, ISBN:
+        978-0131429383)
 
         \subsection{Supplemental Reading}
             \begin{enumerate}
-                \item Understanding the Linux kernel, Third Edition by Daniel P. Bovet and Marco Cesati (AUCA Library Call Number: QA76.76.O63 B683 2006, ISBN: 978-0596005658)
-                \item Linux Kernel in a Nutshell by Greg Kroah-Hartman (\url{http://www.kroah.com/lkn}, ISBN: 978-0596100797)
-                \item Windows Internals, Part 1 (6th Edition) by Mark E. Russinovich and David A. Solomon (AUCA Library Call Number: QA76.76.W56 R885 2012, ISBN: 978-0735648739)
-                \item Windows Internals, Part 2 (6th Edition) by Mark E. Russinovich and David A. Solomon (AUCA Library Call Number: QA76.76.W56 R885 2012, ISBN: 978-0735665873)
-                \item Mac OS X and iOS internals : to the apple's core by Jonathan Levin (AUCA Library Call Number: QA76.774.M33 L48 2013, ISBN: 978-1118057650)
-                \item Mac OS X Internals: A Systems Approach by Amit Singh (AUCA Library Call Number: QA76.76.O63 S564 2007, ISBN: 978-0321278548)
+                \item Understanding the Linux kernel, Third Edition by Daniel P.
+                Bovet and Marco Cesati (AUCA Library Call Number: QA76.76.O63
+                B683 2006, ISBN: 978-0596005658)
+                \item Linux Kernel Development, 3rd Edition by Robert Love
+                (ISBN: 978-0672329463)
+                \item Windows Internals, Part 1 (6th Edition) by Mark E.
+                Russinovich and David A. Solomon (AUCA Library Call Number:
+                QA76.76.W56 R885 2012, ISBN: 978-0735648739)
+                \item Windows Internals, Part 2 (6th Edition) by Mark E.
+                Russinovich and David A. Solomon (AUCA Library Call Number:
+                QA76.76.W56 R885 2012, ISBN: 978-0735665873)
+                \item Mac OS X and iOS internals : to the apple's core by
+                Jonathan Levin (AUCA Library Call Number: QA76.774.M33 L48 2013,
+                ISBN: 978-1118057650)
+                \item Mac OS X Internals: A Systems Approach by Amit Singh (AUCA
+                Library Call Number: QA76.76.O63 S564 2007, ISBN:
+                978-0321278548)
             \end{enumerate}
 
     \section{Grading}
@@ -142,9 +157,11 @@
 
     \section{Rules}
 
-        Students are required to follow the rules of conduct of the Software Engineering Department and American University of Central Asia.
+        Students are required to follow the rules of conduct of the Software
+        Engineering Department and American University of Central Asia.
 
-        Team work is NOT encouraged. Equal blocks of code or similar structural pieces in separate works will be considered as academic dishonesty and all parties will get zero for the task.
+        Team work is NOT encouraged. Equal blocks of code or similar structural
+        pieces in separate works will be considered as academic dishonesty and
+        all parties will get zero for the task.
 
 \end{document}
-
