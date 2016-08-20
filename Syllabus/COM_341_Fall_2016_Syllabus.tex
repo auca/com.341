@@ -1,0 +1,212 @@
+\documentclass[12pt,a4paper,oneside]{article}
+
+\usepackage[margin=3cm]{geometry}
+
+\usepackage{hyperref}
+\hypersetup{
+    pdftitle={COM 341.1, Operating Systems},%
+    pdfauthor={Toksaitov Dmitrii Alexandrovich},%
+    pdfsubject={Syllabus},%
+    pdfkeywords={COM;}{341.1;}{syllabus;}{operating;}{systems},%
+    colorlinks,%
+    linkcolor=black,%
+    citecolor=black,%
+    filecolor=black,%
+    urlcolor=black
+}
+
+\newcommand{\R}[1]{\uppercase\expandafter{\romannumeral #1\relax}}
+
+\begin{document}
+
+    \title{COM 341.1, Operating Systems}
+    \author{
+        American University of Central Asia\\
+        Software Engineering Department
+    }
+    \date{}
+    \maketitle
+
+    \section{Course Information}
+
+        \begin{description}
+            \item[Course ID]\hfill\\
+                COM 341.1, 3325
+            \item[Course Repository]\hfill\\
+                \url{https://github.com/auca/com.341}
+            \item[Place]\hfill\\
+                AUCA, laboratory G30
+            \item[Time]\hfill\\
+                Monday 9:25\\
+                Friday 9:25
+        \end{description}
+
+    \section{Prerequisites}
+
+        COM 117, Programming \R{2}. Object-oriented Design
+
+        \section{Contact Information}
+
+            \begin{description}
+                \item[Instructor]\hfill\\
+                    Toksaitov Dmitrii Alexandrovich\\
+                    \href{mailto:toksaitov_d@auca.kg}{toksaitov\_d@auca.kg}
+                \item[Office]\hfill\\
+                    AUCA, room 315
+                \item[Office Hours]\hfill\\
+                    Monday 12:45--14:45\\
+                    Wednesday 12:45--14:45\\
+                    Friday 14:00--16:00
+            \end{description}
+
+    \section{Course Overview}
+
+        The course introduces students to the fundamentals of operating systems
+        design and implementation. Topics include an overview of the components
+        of an operating system, synchronization, implementation of processes,
+        scheduling algorithms, memory management and file systems. This course
+        is designed for Software Engineering majors and minors.
+
+    \section{Topics Covered}
+
+        \begin{description}
+            \item[Processes]\hfill\\
+                Scheduling\\
+                Inter-process Communication
+            \item[Memory Management]\hfill\\
+                Segmentation\\
+                Virtual Memory Management\\
+                Page Replacement Algorithms\\
+                Swapping
+            \item[File Systems]\hfill\\
+                File System Implementation\\
+                Protection Mechanisms
+            \item[Input \& Output]\hfill\\
+                Principles of I/O Hardware \& Software\\
+                Deadlocks\\
+                RAM Disks\\
+                Disks\\
+                Terminals
+        \end{description}
+
+    \section{Quizzes}
+
+        Students will get four quizzes throughout the course on topics discussed
+        during classes.
+
+    \section{Practice Tasks}
+
+        Students are required to finish four practice tasks during the course.\\
+
+        In the first task students will take a look on how communication with
+        the kernel works from the user space of an operating system. The task is
+        to make a simple interactive shell not to rely on any C run-time or
+        standard libraries. Students will do that by making system calls
+        directly to the kernel on Linux, FreeBSD, or macOS in x86, or ARM
+        assembly.\\
+
+        In the second task students will take a look on how system calls are
+        processed on the kernel side. They will have to add a new subsystem to a
+        Linux kernel and a number of system calls to query information about
+        running processes without using the \textit{/proc} virtual file
+        system.\\
+
+        The third task is to study the scheduling subsystem of a Linux kernel
+        and to modify it to give the maximum possible amount of CPU time for a
+        process and its parents after a request by a privileged user.\\
+
+        The final task is to get a look on an implementation of a custom file
+        system in user space for \href{https://github.com/libfuse/libfuse}{FUSE}
+        on *nix or \href{https://github.com/dokan-dev/dokany}{Dokany} on
+        Windows. Students will have to write several management utilities to
+        create and defragment the file system at hand.
+
+    \section{Course Projects}
+
+        Students are required to finish two course projects.\\
+
+        The first project is to develop a limited simulation of an OS kernel on
+        top of an emulated computer system. In a simplified environment students
+        will get a chance to build all major parts of a working preemptive
+        kernel such as a scheduler, a virtual memory manager, and a file system
+        driver in a high-level language.\\
+
+        The second course project is to port a working subsystem from the
+        simulated computer environment from the first project to an x86 kernel
+        developed at AUCA. Students will have to port their code from a
+        high-level language to C and assembly and adapt it to work on a real
+        hardware.
+
+    \section{Reading}
+		\begin{enumerate}
+            \item Operating Systems Design and Implementation, Third Edition by Andrew S.
+            Tanenbaum (AUCA Library Call Number: QA76.76.O63 T35 2006, ISBN:
+            978-0131429383)
+            \item Modern Operating Systems, Fourth Edition by Andrew S. Tanenbaum and
+            Herbert Bos (ISBN: 978-0133591620)
+        \end{enumerate}
+
+        \subsection{Other Recommendations}
+            \begin{enumerate}
+                \item Operating System Concepts, 9th Edition by Abraham
+                Silberschatz, Peter B. Galvin, Greg Gagne (ISBN: 978-1118063330)
+                \item Operating Systems: Internals and Design Principles, 8th
+                Edition by Abraham Silberschatz, Peter B. Galvin, Greg Gagne
+                (ISBN: 978-0133805918)
+            \end{enumerate}
+
+        \subsection{Supplemental Reading}
+            \begin{enumerate}
+                \item Understanding the Linux kernel, Third Edition by Daniel P.
+                Bovet and Marco Cesati (AUCA Library Call Number: QA76.76.O63
+                B683 2006, ISBN: 978-0596005658)
+                \item Linux Kernel Development, 3rd Edition by Robert Love
+                (ISBN: 978-0672329463)
+                \item Windows Internals, Part 1 (6th Edition) by Mark E.
+                Russinovich and David A. Solomon (AUCA Library Call Number:
+                QA76.76.W56 R885 2012, ISBN: 978-0735648739)
+                \item Windows Internals, Part 2 (6th Edition) by Mark E.
+                Russinovich and David A. Solomon (AUCA Library Call Number:
+                QA76.76.W56 R885 2012, ISBN: 978-0735665873)
+                \item Mac OS X and iOS internals : to the apple's core by
+                Jonathan Levin (AUCA Library Call Number: QA76.774.M33 L48 2013,
+                ISBN: 978-1118057650)
+                \item Mac OS X Internals: A Systems Approach by Amit Singh (AUCA
+                Library Call Number: QA76.76.O63 S564 2007, ISBN:
+                978-0321278548)
+            \end{enumerate}
+
+    \section{Grading}
+
+        \begin{itemize}
+            \item Quizzes (20\%)
+            \item Practice tasks (35\%)
+            \item Course projects (45\%)
+        \end{itemize}
+
+        \begin{itemize} \itemsep-10pt \parskip0pt \parsep0pt
+            \item[--] 90\%--100\%: A\\
+            \item[--] 80\%--89\%: A-\\
+            \item[--] 70\%--79\%: B+\\
+            \item[--] 65\%--69\%: B\\
+            \item[--] 60\%--64\%: B-\\
+            \item[--] 56\%--59\%: C+\\
+            \item[--] 53\%--55\%: C\\
+            \item[--] 50\%--52\%: C-\\
+            \item[--] 46\%--49\%: D+\\
+            \item[--] 43\%--45\%: D\\
+            \item[--] 40\%--42\%: D-\\
+            \item[--] Less than 39\%: F
+        \end{itemize}
+
+    \section{Rules}
+
+        Students are required to follow the rules of conduct of the Software
+        Engineering Department and American University of Central Asia.
+
+        Team work is NOT encouraged. The same blocks of code or similar
+        structural pieces in separate works will be considered as academic
+        dishonesty and all parties will get zero for the task.
+
+\end{document}
+
