@@ -45,19 +45,20 @@
 
         COM 117, Programming \R{2}. Object-oriented Design
 
-        \section{Contact Information}
+    \section{Contact Information}
 
-            \begin{description}
-                \item[Instructor]\hfill\\
-                    Toksaitov Dmitrii Alexandrovich\\
-                    \href{mailto:toksaitov_d@auca.kg}{toksaitov\_d@auca.kg}
-                \item[Office]\hfill\\
-                    AUCA, room 315
-                \item[Office Hours]\hfill\\
-                    Monday 12:45--14:45\\
-                    Wednesday 12:45--14:45\\
-                    Friday 14:00--16:00
-            \end{description}
+        \begin{description}
+            \item[Instructor]\hfill\\
+                Toksaitov Dmitrii Alexandrovich\\
+                \href{mailto:toksaitov_d@auca.kg}{toksaitov\_d@auca.kg}
+            \item[Office]\hfill\\
+                AUCA, room 315
+            \item[Office Hours]\hfill\\
+                Monday 12:45--14:45\\
+                Tuesday 10:50--12:45, 14:00--16:00\\
+                Wednesday 12:45--14:45\\
+                Friday 14:00--16:00
+        \end{description}
 
     \section{Course Overview}
 
@@ -111,12 +112,13 @@
         running processes without using the \textit{/proc} virtual file
         system.\\
 
-        The third task is to study the scheduling subsystem of a Linux kernel
-        and to modify it to give the maximum possible amount of CPU time for a
-        process and its parents after a request by a privileged user.\\
+        The third task is to study the scheduling subsystem of the Linux kernel
+        and to modify it to allow requests from processes owned by privileged
+        users for the maximum possible amount of CPU time for the calling
+        process and its parents.\\
 
-        The final task is to get a look on an implementation of a custom file
-        system in user space for \href{https://github.com/libfuse/libfuse}{FUSE}
+        The final task is to get a look on an implementation of a custom user
+        space file system for \href{https://github.com/libfuse/libfuse}{FUSE}
         on *nix or \href{https://github.com/dokan-dev/dokany}{Dokany} on
         Windows. Students will have to write several management utilities to
         create and defragment the file system at hand.
@@ -138,15 +140,15 @@
         hardware.
 
     \section{Reading}
-		\begin{enumerate}
-            \item Operating Systems Design and Implementation, Third Edition by Andrew S.
-            Tanenbaum (AUCA Library Call Number: QA76.76.O63 T35 2006, ISBN:
-            978-0131429383)
-            \item Modern Operating Systems, Fourth Edition by Andrew S. Tanenbaum and
-            Herbert Bos (ISBN: 978-0133591620)
+        \begin{enumerate}
+            \item Operating Systems Design and Implementation, Third Edition by
+            Andrew S.  Tanenbaum (AUCA Library Call Number: QA76.76.O63 T35
+            2006, ISBN: 978-0131429383)
+            \item Modern Operating Systems, Fourth Edition by Andrew S.
+            Tanenbaum and Herbert Bos (ISBN: 978-0133591620)
         \end{enumerate}
 
-        \subsection{Other Recommendations}
+        \subsection{Other Reading Recommendations}
             \begin{enumerate}
                 \item Operating System Concepts, 9th Edition by Abraham
                 Silberschatz, Peter B. Galvin, Greg Gagne (ISBN: 978-1118063330)
