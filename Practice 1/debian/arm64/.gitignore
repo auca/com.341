@@ -1,0 +1,5 @@
+*.iso
+*.qcow2
+*.fd
+*.img
+*.old
