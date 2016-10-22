@@ -47,39 +47,41 @@ Follow the steps to install the 64-bit ARMv8 Debian Linux in QEMU.
 
 8. Start the emulator and the installation process.
 
-        # On Windows, use the <Backspace> key to select items on the screen
         ./start_installation.sh
 
-9. Follow the steps to install the system.
+9. On Windows, switch to the serial console by pressing `CTRL+ALT+2` in QEMU.
+   Use `Backspace` to select items on the screen.
+
+10. Follow the steps to install the system.
 
 ![Step 1](http://i.imgur.com/qFWEBRp.png)
-![Step 3](http://i.imgur.com/wuUwjYz.png)
-![Step 5](http://i.imgur.com/UcfNHDs.png)
-![Step 6](http://i.imgur.com/HuPwlLe.png)
-![Step 7](http://i.imgur.com/I4lLGED.png)
-![Step 9](http://i.imgur.com/o3zlG0H.png)
-![Step 10](http://i.imgur.com/GpeXx8m.png)
-![Step 11](http://i.imgur.com/jBDXiGE.png)
-![Step 12](http://i.imgur.com/pu2swUv.png)
-![Step 13](http://i.imgur.com/Oo0xgzs.png)
-![Step 14](http://i.imgur.com/vA5nRSH.png)
-![Step 15](http://i.imgur.com/4wwBcwJ.png)
-![Step 16](http://i.imgur.com/O06jM2R.png)
-![Step 17](http://i.imgur.com/B6mmMr2.png)
-![Step 18](http://i.imgur.com/0tah7ra.png)
-![Step 19](http://i.imgur.com/CQXrfxl.png)
-![Step 20](http://i.imgur.com/ODF8UsM.png)
-![Step 21](http://i.imgur.com/petlgcE.png)
-![Step 22](http://i.imgur.com/bD3GQt0.png)
-![Step 23](http://i.imgur.com/Dtjfa0Q.png)
-![Step 24](http://i.imgur.com/7SihlVj.png)
-![Step 25](http://i.imgur.com/ZA3OU9Q.png)
-![Step 26](http://i.imgur.com/AZmvLXI.png)
-![Step 27](http://i.imgur.com/S8V6Vdu.png)
-![Step 28](http://i.imgur.com/7NYnwpW.png)
-![Step 29](http://i.imgur.com/YjefqIY.png)
-![Step 30](http://i.imgur.com/GZBC9L4.png)
-![Step 31](http://i.imgur.com/r0YCQys.png)
+![Step 2](http://i.imgur.com/wuUwjYz.png)
+![Step 3](http://i.imgur.com/UcfNHDs.png)
+![Step 4](http://i.imgur.com/HuPwlLe.png)
+![Step 5](http://i.imgur.com/I4lLGED.png)
+![Step 6](http://i.imgur.com/o3zlG0H.png)
+![Step 7](http://i.imgur.com/GpeXx8m.png)
+![Step 8](http://i.imgur.com/jBDXiGE.png)
+![Step 9](http://i.imgur.com/pu2swUv.png)
+![Step 10](http://i.imgur.com/Oo0xgzs.png)
+![Step 11](http://i.imgur.com/vA5nRSH.png)
+![Step 12](http://i.imgur.com/4wwBcwJ.png)
+![Step 13](http://i.imgur.com/O06jM2R.png)
+![Step 14](http://i.imgur.com/B6mmMr2.png)
+![Step 15](http://i.imgur.com/0tah7ra.png)
+![Step 16](http://i.imgur.com/CQXrfxl.png)
+![Step 17](http://i.imgur.com/ODF8UsM.png)
+![Step 18](http://i.imgur.com/petlgcE.png)
+![Step 19](http://i.imgur.com/bD3GQt0.png)
+![Step 20](http://i.imgur.com/Dtjfa0Q.png)
+![Step 21](http://i.imgur.com/7SihlVj.png)
+![Step 22](http://i.imgur.com/dGcs0t1.png)
+![Step 23](http://i.imgur.com/AZmvLXI.png)
+![Step 24](http://i.imgur.com/S8V6Vdu.png)
+![Step 25](http://i.imgur.com/sGkrul7.png)
+![Step 26](http://i.imgur.com/YjefqIY.png)
+![Step 27](http://i.imgur.com/GZBC9L4.png)
+![Step 28](http://i.imgur.com/r0YCQys.png)
 
 ### Starting and Stopping the System
 
