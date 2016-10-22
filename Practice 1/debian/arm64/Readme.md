@@ -47,6 +47,7 @@ Follow the steps to install the 64-bit ARMv8 Debian Linux in QEMU.
 
 8. Start the emulator and the installation process.
 
+        # On Windows, use the <Backspace> key to select items on the screen
         ./start_installation.sh
 
 9. Follow the steps to install the system.
