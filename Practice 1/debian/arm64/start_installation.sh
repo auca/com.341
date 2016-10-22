@@ -1,11 +1,13 @@
 #!/usr/bin/env sh
 
+DISPLAY=`[ "$OSTYPE" == "msys" ] && echo "-display gtk" || echo "-nographic"`
+
 qemu-system-aarch64                                                         \
     -machine virt                                                           \
     -cpu cortex-a57                                                         \
     -m 256M                                                                 \
     -smp 1                                                                  \
-    -nographic                                                              \
+    $DISPLAY                                                                \
     -drive if=pflash,file=flash0.img,format=raw                             \
     -drive if=pflash,file=flash1.img,format=raw                             \
     -drive if=none,file=debian-8.6.0-arm64-hd.qcow2,id=hd0                  \
