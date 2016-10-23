@@ -1,6 +1,8 @@
 ### COM 341, Operating Systems
 # Practice Task #1
 
+![ish](http://i.imgur.com/hUwm2PG.gif)
+
 ### Required Tools
 
 Ensure that you have the Bash shell with common Unix utilities (GNU coreutils or
