@@ -12,7 +12,8 @@ Follow the steps to install the 64-bit ARMv8 Debian Linux in QEMU.
 2. Download the hardware emulator QEMU for your operating system.
 
         # On Windows (from the Bash shell bundled with Git)
-        ./utilities/download_qemu.sh
+        ./utilities/download_qemu_win64.sh # or download_qemu_win32.sh on a
+                                           # 32-bit Windows
         export PATH=$PATH:`cd qemu; pwd`
 
         # On macOS with [Homebrew](http://brew.sh)
