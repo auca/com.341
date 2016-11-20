@@ -18,11 +18,27 @@ the progress of the task at any moment in time later.
 
 Install a terminal multiplexer
 
-    sudo apt-get install tmux
+    sudo apt install tmux
 
 Type the following to start a new virtual terminal on your remote server
 
     tmux
+
+To split the current pane into two vertically
+
+    <CTRL+B> "
+
+To split the current pane into two horizontally
+
+    <CTRL+B> %
+
+To switch to the pane above, below, to the left, or to the right of the current
+pane
+
+    <CTRL+B><Up>
+    <CTRL+B><Down>
+    <CTRL+B><Left>
+    <CTRL+B><Right>
 
 To detach from a virtual terminal
 
@@ -55,7 +71,7 @@ To exit from a virtual terminal
 
 6. Set `memory size` to 1024 megabytes or more. Click on `Create`.
 
-7. Set `file size` for a new virtual disk to 20 gigabytes or more. Once again,
+7. Set `file size` for a new virtual disk to 30 gigabytes or more. Once again,
    click on `Create`.
 
 8. Right click on your new machine and select `Settings...`.
@@ -97,47 +113,52 @@ To exit from a virtual terminal
 18. Set a system host name to identify the virtual machine on your network. You
     can use the default value.
 
-19. Set a mirror to download software packages. You can use US servers or
-    servers from any country close to you.
-
-20. Set proxy parameters. Ignore the dialog if you don't have a proxy server.
-
-21. Type your full name, select a login name, create a password for a new
+19. Type your full name, select a login name, create a password for a new
     account on your virtual system.
 
-22. Select an option that you don't want to encrypt your home directory.
+20. Select an option that you don't want to encrypt your home directory.
 
-23. Ensure that your time zone was configured properly.
+21. Ensure that your time zone was configured properly.
 
-24. Select `Guided - use entire disk` during a disk partitioning step.
+22. Select `Guided - use entire disk` during a disk partitioning step.
 
-25. Select your virtual disk and confirm destructive operations.
+23. Select your virtual disk and confirm destructive operations.
 
-26. Select the option to install security updates automatically.
+24. Set proxy parameters. Ignore the dialog if you don't have a proxy server.
 
-27. On a software selection dialog, check `OpenSSH server`.
+25. Select the option to install security updates automatically.
 
-28. Confirm the boot loader installation.
+26. On a software selection dialog, check `OpenSSH server`.
 
-29. Confirm that the system clock is set to UTC.
+27. Confirm the boot loader installation.
 
-30. When asked, remove the disk image by clicking on a disk icon in the lower
+28. When asked, remove the disk image by clicking on a disk icon in the lower
     right corner and selecting `Remove disk from virtual drive`. Reboot the
     virtual machine.
 
-31. You can work directly in the VirtualBox window, or you can connect to your
+29. You can work directly in the VirtualBox window, or you can connect to your
     server through the SSH protocol.
 
-    On your host machine (from Bash on Windows or Mac OS Terminal) use the
-    following command to connect to your virtual server.
+    On your host machine (from Bash on Windows or any terminal on *nix
+    platforms) use the following command to connect to your virtual server.
 
-        ssh -p 2222 127.0.0.1
+        ssh -p 2222 <the user name specified during installation>@127.0.0.1
 
     Consider to start using `tmux` at this point.
 
+30. Uncomment every line that starts with `deb-src` except the line that ends
+    with the word `partner` in the package manager's configuration file
+    `/etc/apt/sources.list` and save it.
+
+        sudo nano /etc/apt/sources.list
+
+31. Update package index and install updates to the system
+
+        sudo apt update && sudo apt upgrade
+
 32. Install `git`, `make`, `gcc`, and `ncurses-dev`.
 
-        sudo apt-get install git make gcc ncurses-dev
+        sudo apt install git make gcc ncurses-dev
 
 33. Get the task sources.
 
@@ -166,15 +187,15 @@ To exit from a virtual terminal
         git config --global user.email "your e-mail address"
 
 39. Clone the Linux kernel repository for Ubuntu 16.10. Note that Git will try
-    to fetch around 2 gigabytes of data from the Canonical servers (the company
+    to fetch around 200 megabytes of data from the Canonical servers (the company
     behind the Ubuntu OS).
 
-        git clone git://kernel.ubuntu.com/ubuntu/ubuntu-yakkety.git
+        git clone --depth 1 git://kernel.ubuntu.com/ubuntu/ubuntu-yakkety.git
 
 40. Install prerequisites for building the kernel.
 
-        sudo apt-get build-dep linux-image-$(uname -r)
-        sudo apt-get install fakeroot
+        sudo apt build-dep linux-image-$(uname -r)
+        sudo apt install fakeroot
 
 41. Go inside the kernel source tree.
 
@@ -340,11 +361,11 @@ To exit from a virtual terminal
 
     Change the line
 
-        core-y += kernel/ mm/ fs/ ipc/ security/ crypto/ block/
+        core-y += kernel/ certs/ mm/ fs/ ipc/ security/ crypto/ block/
 
     to
 
-        core-y += kernel/ mm/ fs/ ipc/ security/ crypto/ block/ task_info/
+        core-y += kernel/ certs/ mm/ fs/ ipc/ security/ crypto/ block/ task_info/
 
 54. Add a string `+test` after the version number at the top of
     `debian.master/changelog` to identify your new kernel.
@@ -353,11 +374,11 @@ To exit from a virtual terminal
 
     Change the version at the top (the version can be different)
 
-        linux (4.8.0-26.28) yakkety; urgency=low
+        linux (4.8.0-27.29) yakkety; urgency=low
 
     to
 
-        linux (4.8.0-26.28+test) yakkety; urgency=low
+        linux (4.8.0-27.29+test) yakkety; urgency=low
 
 55. Ensure that you are in the root directory of the kernel source tree.
 
@@ -425,7 +446,7 @@ To exit from a virtual terminal
 
     In case of dependency errors, run the following
 
-        sudo apt-get -f install
+        sudo apt -f install
 
     and restart the installation process
 
@@ -437,7 +458,7 @@ To exit from a virtual terminal
 
 64. Reconnect to your machine.
 
-        ssh -p 2222 127.0.0.1
+        ssh -p 2222 <the user name specified during installation>@127.0.0.1
 
 65. Go to the directory with sources of the process information utility "tasks".
 
