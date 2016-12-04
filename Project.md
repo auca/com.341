@@ -2,20 +2,18 @@
 
 ## Part 1
 
-    git clone 'ssh://<surname>@auca.toksaitov.xyz:2222/~/svm'
+    git clone 'ssh://<AUCA Login>@auca.xyz:/~/os/svm'
 
 You can also work directly on the server.
 
-    ssh -p 2222 <surname>@auca.toksaitov.xyz
-    cd svm/
+    ssh <AUCA Login>@auca.xyz
+    cd os/svm/
 
 ## Part 2
 
-    git clone 'ssh://<surname>@auca.toksaitov.xyz:2222/~/svm-memory'
+    git clone 'ssh://<AUCA Login>@auca.xyz:/~/os/svm-memory'
 
 You can also work directly on the server.
 
-    ssh -p 2222 <surname>@auca.toksaitov.xyz
-    cd svm-memory/
-
-Replace the `<surname>` placeholder with your last name. Type it in lowercase letters.
+    ssh <AUCA Login>@auca.xyz
+    cd os/svm-memory/
