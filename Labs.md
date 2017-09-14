@@ -4,6 +4,9 @@ Lab Tasks
 During labs students will have to practice with various abstractions created by
 Unix and Unix-like kernels by writing various system utility applications.
 
+You can use the AUCA server for this work through SSH at 'auca.space'. The login has 
+the format <last name>_<first letter of the first name>.
+
 ## Lab #1, Input and Output
 
 Create simple clones of the following common Nix programs. Find out their
