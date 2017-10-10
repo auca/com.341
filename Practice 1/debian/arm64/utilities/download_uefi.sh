@@ -1,7 +1,7 @@
 #!/usr/bin/env sh
 
 EFI='QEMU_EFI.fd'
-URL="https://dl.dropboxusercontent.com/u/5779716/$EFI"
+URL="https://www.dropbox.com/s/h6dgdrsglagcir0/$EFI?dl=1"
 
 test -e "$EFI" && mv "$EFI" "$EFI".old
-curl -L -C - -o "$EFI" "$URL" || wget --continue -o "$EFI" "$URL"
+curl --location -C - --output "$EFI" "$URL" || wget --continue --output-file="$EFI" "$URL"
