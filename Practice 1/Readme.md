@@ -24,13 +24,14 @@ macOS and Ubuntu Linux have Bash and basic Unix programs installed by default.
 
 The goal of the task is to write code to communicate with the kernel of an
 operating system through machine instructions of a particular CPU architecture.
-The CPU architecture selected for this year is ARMv8-A.
+The CPU architecture selected for this year is ARMv7.
 
 * [First](https://github.com/auca/com.341/tree/master/Practice%201/debian/arm64),
   you need to prepare an execution environment on you personal computer (with an
-  x86 or x86-64 CPU architecture). To emulate the ARMv8-A CPU we will use the
+  x86 or x86-64 CPU architecture). To emulate the ARMv7-A CPU we will use the
   QEMU hardware emulator. Through QEMU we will install and use a 64-bit ARMv8
-  version of the Debian Linux operating system.
+  version of the Debian Linux operating system (it has support for ARMv7
+  applications).
 
 * [Second](https://github.com/auca/com.341/tree/master/Practice%201/ish), you
   need to implement a number of system calls in assembly language for the CPU at

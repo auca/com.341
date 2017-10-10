@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 
-DISK='debian-9.2.0-arm64-hd.qcow2'
+DISK='debian-9.2.0-amd64-hd.qcow2'
 SIZE='8G'
 
 test -e "$DISK" && mv "$DISK" "$DISK".old
