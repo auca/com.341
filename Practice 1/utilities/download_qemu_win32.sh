@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 
-QEMU_ARCHIVE='qemu-2.7.0-win32.tar.gz'
+QEMU_ARCHIVE='qemu-2.10.1-win32.tar.gz'
 QEMU_DIRECTORY='qemu'
 URL="https://dl.dropboxusercontent.com/u/5779716/$QEMU_ARCHIVE"
 
