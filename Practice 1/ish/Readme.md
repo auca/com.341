@@ -29,14 +29,14 @@
 6. Clone a remote repository with project files to the home directory on Debian
    from the new SSH season.
 
-        git clone ssh://<AUCA Login>@auca.xyz:/~/os/task_01.git
+        git clone ssh://<AUCA Login>@auca.space:/~/os/task_01.git
 
 7. Go into the newly created directory `task_01`.
 
         cd task_01
 
    In this task you need to perform a number of system calls to the Linux kernel
-   on the 64-bit ARMv8 CPU architecture.
+   on the 64-bit ARMv7 CPU architecture.
 
    The calls are
 
