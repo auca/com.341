@@ -23,7 +23,7 @@ Follow the steps to install the 64-bit AMD64 Debian Linux in QEMU.
         sudo port install qemu
 
         # On Ubuntu Linux
-        sudo apt install qemu-system-aarch64
+        sudo apt install qemu-system-x86_64
 
 3. Move into the directory `./debian/amd64`.
 

@@ -8,7 +8,7 @@ qemu-system-x86_64                                                          \
     $DISPLAY                                                                \
     -drive if=pflash,file=flash0.img,format=raw                             \
     -drive if=pflash,file=flash1.img,format=raw                             \
-    -drive if=none,file=debian-8.2.0-amd64-hd.qcow2,id=hd0                  \
+    -drive if=none,file=debian-9.2.0-amd64-hd.qcow2,id=hd0                  \
     -device virtio-blk-device,drive=hd0                                     \
     -drive if=none,file=debian-9.2.0-amd64-netinst.iso,media=cdrom,id=cdrom \
     -device virtio-scsi-device                                              \

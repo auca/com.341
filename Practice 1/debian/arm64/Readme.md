@@ -120,7 +120,15 @@ sudo poweroff
 
         sudo apt-get install gcc make gdb git
 
-3. Shutdown the system.
+3. Install cross-development libraries to be able to build and run 32-bit ARM
+   programs on a 64-bit ARM operating system.
+
+        sudo dpkg --add-architecture armhf
+        sudo apt-get update
+        sudo apt-get install crossbuild-essential-armhf
+        sudo apt-get install libc6:armhf
+
+4. Shutdown the system.
 
 ### Fixing Networking Issues
 
@@ -149,3 +157,4 @@ sudo poweroff
 2. Remove the old disk image.
 
         ./utilities/remove_old_files.sh
+

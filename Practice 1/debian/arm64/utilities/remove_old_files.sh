@@ -3,7 +3,7 @@
 EFI='QEMU_EFI.fd'
 FIRMWARE='flash0.img'
 VARIABLES='flash1.img'
-DISK='debian-8.6.0-arm64-hd.qcow2'
+DISK='debian-9.2.0-arm64-hd.qcow2'
 
 rm -i "$EFI".old       \
       "$FIRMWARE".old  \
