@@ -42,17 +42,15 @@
 
     Linux ARMv7-A System Call Tables from Android Bionic libc
 
-        `unistd.h`
+        `unistd-common.h`
 
-        https://github.com/android/platform_bionic/blob/master/libc/kernel/
-            uapi/asm-arm/asm
+        https://github.com/android/platform_bionic/blob/master/libc/kernel/uapi/asm-arm/asm
 
     Linux ARMv8-A System Call Tables from Android Bionic libc
 
         `unistd.h`
 
-        https://github.com/android/platform_bionic/blob/master/libc/kernel/
-            uapi/asm-generic
+        https://github.com/android/platform_bionic/blob/master/libc/kernel/uapi/asm-generic
 */
 
 #ifndef ISH_USE_STDLIB
