@@ -199,6 +199,9 @@
 
 ### Reading
 
+* [C Books and Guides](https://github.com/auca/com.341/blob/master/Labs.md#links)
+
 * _Understanding the Linux kernel, Third Edition by Daniel P. Bovet and Marco Cesati, Chapters 4, 10_
 
 * _Linux Kernel Development, Third Edition by Robert Love, Chapters 5, 7_
+
