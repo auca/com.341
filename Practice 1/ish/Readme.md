@@ -35,8 +35,8 @@
 
         cd task_01
 
-   In this task you need to perform a number of system calls to the Linux kernel
-   on the 64-bit ARMv7 CPU architecture.
+   In this task, you need to perform a number of system calls to the Linux
+   kernel on the 64-bit ARMv7 CPU architecture.
 
    The calls are
 
@@ -48,7 +48,7 @@
         creat
         dup2
         close
-        fork
+        fork # for extra points
         execve
         waitpid
         write
@@ -66,7 +66,7 @@
         ish_creat
         ish_dup2
         ish_close
-        ish_fork
+        ish_fork # for extra points
         ish_execve
         ish_waitpid
         ish_write
@@ -111,8 +111,8 @@
 
 * Edit the code. Add prototypes and implementation for every system call in
   files `ish_syscall.h` and `ish_syscall.c`. Change related system call names in
-  `ish.c` to the newly implemented function names in `ish_syscall.h` (e.g., change
-  `read` to `ish_read`).
+  `ish.c` to the newly implemented function names in `ish_syscall.h` (e.g.,
+  change `read` to `ish_read`).
 
         nano ish_syscalls.h
         nano ish_syscalls.c
@@ -120,7 +120,8 @@
 
 * Build or rebuild the shell.
 
-        make
+        make # to compile the 64-bit version
+        CC=arm-linux-gnueabihf-gcc make # to compile the 32-bit version
 
 * Test the shell by typing builtin commands such as `cd` and `exit`. Try to
   start various system programs such as `ls` or `date` with an absolute path to
@@ -164,35 +165,27 @@
 
 ### Resources
 
-[GCC Documentation, How to Use Inline Assembly Language in C Code]
-    (https://gcc.gnu.org/onlinedocs/gcc/Using-Assembly-Language-with-C.html)
+* [GCC Documentation, How to Use Inline Assembly Language in C Code](https://gcc.gnu.org/onlinedocs/gcc/Using-Assembly-Language-with-C.html)
 
-[GCC-Inline-Assembly-HOWTO]
-    (https://www.ibiblio.org/gferg/ldp/GCC-Inline-Assembly-HOWTO.html)
+* [GCC-Inline-Assembly-HOWTO](https://www.ibiblio.org/gferg/ldp/GCC-Inline-Assembly-HOWTO.html)
 
-[Linux x86-64 System Call Tables]
-    (https://github.com/torvalds/linux/tree/master/arch/x86/entry/syscalls/syscall_64.tbl)
+* [ARM GCC Inline Assembler Cookbook](http://www.ethernut.de/en/documents/arm-inline-asm.html)
 
-[Linux x86 System Call Tables]
-    (https://github.com/torvalds/linux/tree/master/arch/x86/entry/syscalls/syscall_32.tbl)
+* [Linux x86-64 System Call Tables](https://github.com/torvalds/linux/tree/master/arch/x86/entry/syscalls/syscall_64.tbl)
 
-[Bionic Standard C Library, Linux ARMv7-A System Call Table]
-    (https://github.com/android/platform_bionic/blob/master/libc/kernel/uapi/asm-arm/asm/unistd.h)
+* [Linux x86 System Call Tables](https://github.com/torvalds/linux/tree/master/arch/x86/entry/syscalls/syscall_32.tbl)
 
-[Bionic Standard C Library, Linux ARMv8-A System Call Table]
-    (https://github.com/android/platform_bionic/blob/master/libc/kernel/uapi/asm-generic/unistd.h)
+* [Bionic Standard C Library, Linux ARMv7-A System Call Table](https://github.com/aosp-mirror/platform_bionic/blob/master/libc/kernel/uapi/asm-arm/asm/unistd-common.h)
 
-[Bionic Standard C Library, x86-64 System Calls]
-    (https://github.com/android/platform_bionic/tree/master/libc/arch-x86_64/syscalls)
+* [Bionic Standard C Library, Linux ARMv8-A System Call Table](https://github.com/android/platform_bionic/blob/master/libc/kernel/uapi/asm-generic/unistd.h)
 
-[Bionic Standard C Library, x86 System Calls]
-    (https://github.com/android/platform_bionic/tree/master/libc/arch-x86/syscalls)
+* [Bionic Standard C Library, x86-64 System Calls](https://github.com/android/platform_bionic/tree/master/libc/arch-x86_64/syscalls)
 
-[Bionic Standard C Library, ARMv7-A System Calls]
-    (https://github.com/android/platform_bionic/tree/master/libc/arch-arm/syscalls)
+* [Bionic Standard C Library, x86 System Calls](https://github.com/android/platform_bionic/tree/master/libc/arch-x86/syscalls)
 
-[Bionic Standard C Library, ARMv8-A System Calls]
-    (https://github.com/android/platform_bionic/tree/master/libc/arch-arm64/syscalls)
+* [Bionic Standard C Library, ARMv7-A System Calls](https://github.com/android/platform_bionic/tree/master/libc/arch-arm/syscalls)
+
+* [Bionic Standard C Library, ARMv8-A System Calls](https://github.com/android/platform_bionic/tree/master/libc/arch-arm64/syscalls)
 
 ### Documentation
 

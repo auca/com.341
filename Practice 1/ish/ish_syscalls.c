@@ -62,6 +62,8 @@ long ish_read(
 
         long result;                                     // a C variable
 
+        // x86, x86-64
+
         __asm__ __volatile__ (
             "op-code<length suffix> %%src_register, %%dest_register\n\t"
             "op-code<length suffix> $immediate, %%dest_register\n\t"
@@ -76,6 +78,10 @@ long ish_read(
             : "%used register", "%another used register" // clobbered registers
         );
 
+        // The ARM assembly syntax uses the `#` symbol for constants and NOT
+        // the `$` symbol. Registers `r` or `x` (for the 32-bit or 64-bit
+        // architecture) do not need a `%%` prefix.
+
         // `__asm__` and `__volatile__` could also be written as
         // `asm`     and `volatile`.
 
@@ -86,6 +92,8 @@ long ish_read(
         //     'b'    'w'     's'     'l'     'q'
         //      8 bit  16 bit  16 bit  32 bit  64 bit  integers
         //                     32 bit  64 bit          floating point numbers
+        //
+        // Length suffixes are not required for the ARM assembly syntax.
 
         // Argument numbers go from top to bottom, from left to right
         // starting from zero.
@@ -112,6 +120,13 @@ long ish_read(
         // | S :   %rsi, %esi, %si        |
         // | D :   %rdi, %edi, %di        |
         // +---+--------------------------+
+        //
+        // On ARM, the `r` constraint will work for all general purpose
+        // registers. The input variable's register can be specified after the
+        // variable's declaration wrapped in quotes and parentheses.
+        //
+        //     register long result ("r7"); // 32-bit ARM
+        //     register long result ("x0"); // 64-bit ARM
         //
         // All registers used as input or output arguments should not be
         // listed as clobbered.
