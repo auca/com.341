@@ -20,6 +20,8 @@ For general discussions between students and the course instructor
 
 * <https://auca-sfw.slack.com/messages/com-341-fall-2017>
 
-## Screencasts
+## Screencast
+
+View the screen of the instructor's machine
 
 * <https://hangouts.google.com/hangouts/_/auca.kg/com-341>
