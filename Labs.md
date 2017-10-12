@@ -49,7 +49,7 @@ You should use the POSIX Threads library to implement a parallel Odd-even Sort.
 
 You should use the BSD/POSIX sockets to implement a simple echo-like client/server program.
 
-* netcat
+* netcat (nc)
 
 ### Documentation
 
@@ -64,7 +64,7 @@ You should use the BSD/POSIX sockets to implement a simple echo-like client/serv
     man xargs
     man parallel
     man sort
-    man netcat
+    man nc
 
     man syscalls
 
