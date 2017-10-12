@@ -20,36 +20,36 @@ function of the program (e.g., outputting error messages).
 
 ## Lab #1, Input and Output
 
-* true
-* false
-* yes
-* echo
-* cat
+* `true`
+* `false`
+* `yes`
+* `echo`
+* `cat`
 
 Use the command `echo $?` in your shell to test the `true` and `false` commands.
 
 ## Lab #2, File System
 
-* mv
-* cp
-* rm
+* `mv`
+* `cp`
+* `rm`
 
 ## Lab #3, Processes
 
-* xargs
-* parallel
+* `xargs`
+* `parallel`
 
 ## Lab #4, Threads
 
 You should use the POSIX Threads library to implement a parallel Odd-even Sort.
 
-* sort
+* `sort`
 
 ## Lab #5, Sockets
 
 You should use the BSD/POSIX sockets to implement a simple echo-like client/server program.
 
-* netcat (nc)
+* netcat (`nc`)
 
 ### Documentation
 
@@ -76,19 +76,19 @@ You should use the BSD/POSIX sockets to implement a simple echo-like client/serv
 
 #### Contemporary
 
-* C Programming: A Modern Approach, 2nd Edition by K. N. King
+* _C Programming: A Modern Approach, 2nd Edition by K. N. King_
 
-* Advanced Programming in the UNIX Environment, 3rd Edition by W. Richard
-  Stevens, Stephen A. Rago
+* _Advanced Programming in the UNIX Environment, 3rd Edition by W. Richard
+  Stevens, Stephen A. Rago_
 
-* Unix Network Programming, Volume 1: The Sockets Networking API, 3rd Edition
-  by W. Richard Stevens, Bill Fenner, Andrew M. Rudoff
+* _Unix Network Programming, Volume 1: The Sockets Networking API, 3rd Edition
+  by W. Richard Stevens, Bill Fenner, Andrew M. Rudoff_
 
-* Programming with POSIX Threads by David R. Butenhof
+* _Programming with POSIX Threads by David R. Butenhof_
 
 #### Classic
 
-* C Programming Language, 2nd Edition by Brian W. Kernighan, Dennis M.
-  Ritchie
+* _C Programming Language, 2nd Edition by Brian W. Kernighan, Dennis M.
+  Ritchie_
 
-* The Unix Programming Environment by Brian W. Kernighan, Rob Pike
+* _The Unix Programming Environment by Brian W. Kernighan, Rob Pike_
