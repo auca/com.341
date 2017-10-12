@@ -13,7 +13,7 @@ the `proc` file system.
 ### Notes
 
 Consider working in a terminal multiplexer such as `tmux`. In tmux you can
-disconnect from the machine during a long running process, and go back to check
+disconnect from the machine during a long-running process, and go back to check
 the progress of the task at any moment in time later.
 
 Install a terminal multiplexer
@@ -144,7 +144,7 @@ To exit from a virtual terminal
 
         ssh -p 2222 <the user name specified during installation>@127.0.0.1
 
-    Consider to start using `tmux` at this point.
+    Consider starting using `tmux` at this point.
 
 30. Uncomment every line that starts with `deb-src` except the line that ends
     with the word `partner` in the package manager's configuration file
@@ -423,7 +423,7 @@ To exit from a virtual terminal
 
     To recompile the kernel with new changes after a successful build, remove a
     stamp file to notify the build system that kernel sources were changed.
-    After that you can start the build process again.
+    After that, you can start the build process again.
 
         rm debian/stamps/stamp-build-generic
 
@@ -516,14 +516,11 @@ You will have two weeks from the announcement date to finish your work.
 
 ### Resources
 
-[Linux Cross Reference]
-    (http://lxr.free-electrons.com)
+* [Linux Cross Reference](http://lxr.free-electrons.com)
 
-[Linux Documentation, Adding a New System Call]
-    (https://github.com/torvalds/linux/blob/master/Documentation/adding-syscalls.txt)
+* [Linux Documentation, Adding a New System Call](https://github.com/torvalds/linux/blob/master/Documentation/adding-syscalls.txt)
 
-[Linux Filesytem Hierarchy, /proc]
-    (http://www.tldp.org/LDP/Linux-Filesystem-Hierarchy/html/proc.html)
+* [Linux Filesytem Hierarchy, /proc](http://www.tldp.org/LDP/Linux-Filesystem-Hierarchy/html/proc.html)
 
 ### Documentation
 
@@ -540,4 +537,3 @@ You will have two weeks from the announcement date to finish your work.
   Cesati, Chapters 3, 4, 7, 10_
 
 * _Linux Kernel Development, Third Edition by Robert Love, Chapters 3-5, 7_
-
