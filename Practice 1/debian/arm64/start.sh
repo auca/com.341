@@ -10,7 +10,7 @@ qemu-system-aarch64                                        \
     $DISPLAY                                               \
     -drive if=pflash,file=flash0.img,format=raw,readonly   \
     -drive if=pflash,file=flash1.img,format=raw,readonly   \
-    -drive if=none,file=debian-9.2.0-arm64-hd.qcow2,id=hd0 \
+    -drive if=none,file=debian-9.2.1-arm64-hd.qcow2,id=hd0 \
     -device virtio-blk-device,drive=hd0                    \
     -netdev user,hostfwd=tcp::2222-:22,id=eth0             \
     -device virtio-net-device,netdev=eth0
