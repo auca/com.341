@@ -1,5 +1,5 @@
 CFLAGS  += -g -O1 -std=gnu99 -D ISH_USE_STDLIB
-LDFLAGS +=
+LDFLAGS += -static
 
 TARGET  = ish
 OBJECTS = ish.o                   \
