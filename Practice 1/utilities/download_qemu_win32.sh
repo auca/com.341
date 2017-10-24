@@ -2,7 +2,7 @@
 
 QEMU_ARCHIVE='qemu-2.10.1-win32.tar.gz'
 QEMU_DIRECTORY='qemu'
-URL="https://www.dropbox.com/s/v67ik4hcepr7u2t/$QEMU_ARCHIVE?dl=1/"
+URL="https://www.dropbox.com/s/651b2rpunco4hwy/$QEMU_ARCHIVE?dl=1/"
 
 curl --location -C - --output "$QEMU_ARCHIVE" "$URL" || wget --continue --output-file="$QEMU_ARCHIVE" "$URL"
 
