@@ -507,8 +507,19 @@ To exit from a virtual terminal
 
 ### Submitting Work
 
-Bring the virtualized machine to our labs and show it during the class to the
-instructor to get a grade. Be prepared to answer questions about your work.
+Write a report outlining the most important steps of your work. For every step
+include some basic description and a screenshot of your execution environment.
+
+The final step should include a screenshot of the list of debian packages in
+the home directory and a screenshot of the running _tasks_ program.
+
+Include the introduction chapter outlining your execution environment (e.g., the
+name of the virtualization system, or the name of the cloud platform, and so on).
+
+Include conclusion outlining the challanges that you have experienced during the
+project with information on how you were able to resolve them.
+
+Send the report to <toksaitov_d@auca.kg> before the deadline.
 
 ### Deadlines
 
