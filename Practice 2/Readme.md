@@ -162,7 +162,7 @@ To exit from a virtual terminal
 
 33. Get the task sources.
 
-        git clone 'ssh://<AUCA Login>@auca.xyz:/~/os/task_02.git'
+        git clone 'ssh://<AUCA Login>@auca.space:/~/os/task_02.git'
 
 34. Go to the directory with sources of the process information utility
     "tasks".
