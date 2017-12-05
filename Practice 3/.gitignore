@@ -1,0 +1,12 @@
+# Compiler Files
+
+*.o
+*.d
+
+# Executables
+
+krffs
+mkfs.krffs
+fsck.krffs
+defrag.krffs
+
