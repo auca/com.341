@@ -26,7 +26,7 @@ enum krffs_node_type {
 };
 
 /*
-    Time specification for metadat node fields
+    Time specification for metadatа node fields
  */
 #pragma pack(push,1)
 struct krffs_node_time {
