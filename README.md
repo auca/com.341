@@ -12,13 +12,7 @@ books
 For announcements, student questions and student answers to get the
 participation grade
 
-* <https://piazza.com/class/j6tfld3rvnl50r>
-
-## Class Chat
-
-For general discussions between students and the course instructor
-
-* <https://auca-sfw.slack.com/messages/com-341-fall-2017>
+* <https://piazza.com/auca.kg/fall2018/com341/home>
 
 ## Screencast
 
