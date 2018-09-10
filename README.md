@@ -24,4 +24,22 @@ For general discussions between students and the course instructor
 
 View the screen of the instructor's machine
 
-* <https://hangouts.google.com/hangouts/_/auca.kg/com-341>
+* <https://hangouts.google.com/hangouts/_/ytl/Mrh6uTGsZi2Us4rl51KQdfpR3n4pUVi42_iEV9-e41Q=?hl=en_US>
+
+## Recordings
+
+View previous class recordings
+
+### Lectures
+
+* <https://www.youtube.com/playlist?list=PLIWindejDy9DzUY0NAzPTyw3Q17SxoU90>
+
+### Labs
+
+#### Group A
+
+* TBD
+
+#### Group B
+
+* TBD
