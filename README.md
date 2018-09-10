@@ -32,7 +32,7 @@ View previous class recordings
 
 #### Group A
 
-* TBD
+* <https://www.youtube.com/playlist?list=PLIWindejDy9DWh91wSEW4jspiX9laqfYQ>
 
 #### Group B
 
