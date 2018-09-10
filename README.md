@@ -38,6 +38,6 @@ View previous class recordings
 
 * TBD
 
-## Contact Info Collection Form
+## Contact Info Form
 
 * <https://docs.google.com/spreadsheets/d/1Xx_5-lGgcIvh20YCFooZm5BcNW62k4Iu_gnD2cy8CMM/edit?usp=sharing>
