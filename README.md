@@ -36,7 +36,7 @@ View previous class recordings
 
 #### Group B
 
-* TBD
+* <https://www.youtube.com/playlist?list=PLIWindejDy9BHBiSWJ_-LNvSHzZEbXQad>
 
 ## Contact Info Form
 
