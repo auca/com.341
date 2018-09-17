@@ -37,7 +37,3 @@ View previous class recordings
 #### Group B
 
 * <https://www.youtube.com/playlist?list=PLIWindejDy9BHBiSWJ_-LNvSHzZEbXQad>
-
-## Contact Info Form
-
-* <https://docs.google.com/spreadsheets/d/1Xx_5-lGgcIvh20YCFooZm5BcNW62k4Iu_gnD2cy8CMM/edit?usp=sharing>
