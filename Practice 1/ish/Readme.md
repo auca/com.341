@@ -36,7 +36,7 @@
         cd task_01
 
    In this task, you need to perform a number of system calls to the Linux
-   kernel on the 64-bit ARMv7 CPU architecture.
+   kernel on the 64-bit ARMv8 CPU architecture.
 
    The calls are
 
