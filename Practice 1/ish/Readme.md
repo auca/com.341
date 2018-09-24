@@ -123,10 +123,6 @@
         make # to compile the native system
              # version of the application (32 for 32-bit OS, 64 for 64-bit OS)
 
-        CFLAGS=-m32 make # to compile the 32-bit x86 version
-
-        CC=arm-linux-gnueabihf-gcc make # to compile the 32-bit ARM version
-
 * Test the shell by typing builtin commands such as `cd` and `exit`. Try to
   start various system programs such as `ls` or `date` with an absolute path to
   the executable or without it, with parameters or without them. Try to redirect
