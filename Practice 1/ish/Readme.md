@@ -22,18 +22,19 @@
 
 4. Start a new shell instance.
 
-5. Log in into the Debian system through SSH.
+5. Copy the `ish` directory from your machine to the emulated system with `scp`.
+   The target directory should have the architecture name `arm64` or `amd64` at
+   the end of its name.
+
+        scp -r ish user@127.0.0.1:~/ish_<arch>
+
+6. Log in into the Debian system through SSH.
 
         ssh -p 2222 user@127.0.0.1
 
-6. Clone a remote repository with project files to the home directory on Debian
-   from the new SSH season.
-
-        git clone ssh://<AUCA Login>@auca.space:/~/os/task_01.git
-
 7. Go into the newly created directory `task_01`.
 
-        cd task_01
+        cd ish_<arch>
 
    In this task, you need to perform a number of system calls to the Linux
    kernel on the 64-bit ARMv8 CPU architecture.
@@ -155,12 +156,19 @@
 
 ### Submitting Work
 
+1. Create a git repository.
+
+        git init
+        git config --global user.name <Full Name>
+        git config --global user.email <E-mail>
+
 1. Create a new snapshot of your work with an appropriate description.
 
         git commit -am "Implement system calls <system call name>, ..."
 
-2. Submit your work.
+2. Connect to the instructor's remote and submit your work.
 
+        git remote add origin <TBD: the remote will be announced in class>
         git push origin master
 
 ### Resources
