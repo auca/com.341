@@ -67,6 +67,10 @@ You should use the BSD/POSIX sockets to implement a simple echo-like client/serv
     man false
     man echo
     man cat
+    man ls
+    man pwd
+    man touch
+    man mkdir
     man mv
     man cp
     man rm
@@ -80,6 +84,7 @@ You should use the BSD/POSIX sockets to implement a simple echo-like client/serv
 ### Links
 
 * [Beej's Guide to C Programming](http://beej.us/guide/bgc)
+* [Unix Environment](https://drive.google.com/file/d/0B85z_dQxOMgLNDN3QTFrSmYxZm8/view)
 
 ### Books
 
