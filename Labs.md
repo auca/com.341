@@ -30,6 +30,10 @@ Use the command `echo $?` in your shell to test the `true` and `false` commands.
 
 ## Lab #2, File System
 
+* `ls`
+* `pwd`
+* `touch`
+* `mkdir`
 * `mv`
 * `cp`
 * `rm`
@@ -50,6 +54,11 @@ You should use the POSIX Threads library to implement a parallel Odd-even Sort.
 You should use the BSD/POSIX sockets to implement a simple echo-like client/server program.
 
 * netcat (`nc`)
+
+## Extra Points
+
+* Simple clone of `less` that only supports scrolling
+* Simple clone of `nano` that only supports basic editing
 
 ### Documentation
 
