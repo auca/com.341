@@ -163,8 +163,16 @@ long ish_read(
         #endif
     #elif defined(__linux__)
         #if defined(__aarch64__)
+            register long result asm("x0");                                      
 
-            return -1;
+            __asm__ __volatile__ (                                               
+                "mov x8, #0x3F\n\t"                                              
+                "svc #0x0"                                                       
+                : "=r" (result)                                                  
+                : : "x8"                                                         
+            );                                                                   
+
+            return result;
         #elif defined(__arm__)
 
             return -1;
