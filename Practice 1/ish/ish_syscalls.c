@@ -182,7 +182,7 @@ long ish_read(
               : "=r" (result)
               : : "r7"
             );
-            return -1;
+            return result;
         #endif
     #endif
 #else
@@ -229,7 +229,7 @@ int ish_chdir(const char *path)
                 : "=r" (result)
                 : : "x8"
             );
-            return -1;
+            return result;
         #elif defined(__arm__)
             register long result asm("r0");
 
@@ -239,7 +239,7 @@ int ish_chdir(const char *path)
                 : "=r" (result)
                 : : "r7"
             );
-            return -1;
+            return result;
         #endif
     #endif
 #else
@@ -280,6 +280,7 @@ void ish_exit(int status)
                 : "=r" (result)
                 : : "x8"
             );
+            return result;
         #elif defined(__arm__)
             register long result asm("r0");
 
@@ -289,6 +290,7 @@ void ish_exit(int status)
                 : "=r" (result)
                 : : "r7"
             );
+            return result;
         #endif
     #endif
 #endif
@@ -338,7 +340,7 @@ int ish_stat(const char *path, void *stat_result)
                 : "=r" (result)
                 : : "x8"
             );
-            return -1;
+            return result;
         #elif defined(__arm__)
             register long result asm("r0");
 
@@ -348,7 +350,7 @@ int ish_stat(const char *path, void *stat_result)
                 : "=r" (result)
                 : : "r7"
             );
-            return -1;
+            return result;
         #endif
     #endif
 #else
@@ -400,7 +402,7 @@ int ish_open(const char *path, int flags)
                 : "=r" (result)
                 : : "x8"
             );
-            return -1;
+            return result;
         #elif defined(__arm__)
             register long result asm("r0");
 
@@ -410,7 +412,7 @@ int ish_open(const char *path, int flags)
                 : "=r" (result)
                 : : "r7"
             );
-            return -1;
+            return result;
         #endif
     #endif
 #else
@@ -469,7 +471,7 @@ int ish_creat(const char *path, unsigned int mode)
                 : "=r" (result)
                 : : "x8"
             );
-            return -1;
+            return result;
         #elif defined(__arm__)
             register long result asm("r0");
 
@@ -479,7 +481,7 @@ int ish_creat(const char *path, unsigned int mode)
                 : "=r" (result)
                 : : "r7"
             );
-            return -1;
+            return result;
         #endif
     #elif defined(__linux__)
         /*
@@ -544,7 +546,7 @@ int ish_dup2(int old_file_descriptor, int new_file_descriptor)
                 : "=r" (result)
                 : : "x8"
             );
-            return -1;
+            return result;
         #elif defined(__arm__)
             register long result asm("r0");
 
@@ -554,7 +556,7 @@ int ish_dup2(int old_file_descriptor, int new_file_descriptor)
                 : "=r" (result)
                 : : "r7"
             );
-            return -1;
+            return result;
         #endif
     #endif
 #else
@@ -601,7 +603,7 @@ int ish_close(int file_descriptor)
                 : "=r" (result)
                 : : "x8"
             );
-            return -1;
+            return result;
         #elif defined(__arm__)
             register long result asm("r0");
 
@@ -611,7 +613,7 @@ int ish_close(int file_descriptor)
               : "=r" (result)
               : : "r7"
             );
-            return -1;
+            return result;
         #endif
     #endif
 #else
@@ -663,7 +665,7 @@ int ish_fork()
                 : "=r" (result)
                 : : "x8"
             );
-            return -1;
+            return result;
         #elif defined(__arm__)
             register long result asm("r0");
 
@@ -673,7 +675,7 @@ int ish_fork()
                 : "=r" (result)
                 : : "r7"
             );
-            return -1;
+            return result;
         #endif
     #endif
 #else
@@ -724,7 +726,7 @@ int ish_execve(
                 : "=r" (result)
                 : : "x8"
             );
-            return -1;
+            return result;
         #elif defined(__arm__)
             register long result asm("r0");
 
@@ -734,7 +736,7 @@ int ish_execve(
                 : "=r" (result)
                 : : "r7"
             );
-            return -1;
+            return result;
         #endif
     #endif
 #else
@@ -780,7 +782,7 @@ int ish_waitpid(int pid, int *status, int options)
               : "=r" (result)
               : : "x8"
             );
-            return -1;
+            return result;
         #elif defined(__arm__)
             register long result asm("r0");
 
@@ -790,7 +792,7 @@ int ish_waitpid(int pid, int *status, int options)
                 : "=r" (result)
                 : : "r7"
             );
-            return -1;
+            return result;
         #endif
     #endif
 #else
@@ -841,7 +843,7 @@ long ish_write(
               : "=r" (result)
               : : "x8"
             );
-            return -1;
+            return result;
         #elif defined(__arm__)
             register long result asm("r0");
 
@@ -851,7 +853,7 @@ long ish_write(
                 : "=r" (result)
                 : : "r7"
             );
-            return -1;
+            return result;
         #endif
     #endif
 #else
