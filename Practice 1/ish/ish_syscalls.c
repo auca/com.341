@@ -175,7 +175,6 @@ long ish_read(
             return result;
         #elif defined(__arm__)
             register long result asm("r0");
-
             __asm__ __volatile__ (
                 "mov r7, #0x3\n\t"
                 "swi #0x0"
@@ -184,7 +183,6 @@ long ish_read(
             );
 
             return result;
-
         #endif
     #endif
 #else
