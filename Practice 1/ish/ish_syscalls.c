@@ -177,12 +177,14 @@ long ish_read(
             register long result asm("r0");
 
             __asm__ __volatile__ (
-              "mov r7, #0x3\n\t"
-              "swi #0x0"
-              : "=r" (result)
-              : : "r7"
+                "mov r7, #0x3\n\t"
+                "swi #0x0"
+                : "=r" (result)
+                : : "r7"
             );
-            return -1;
+
+            return result;
+
         #endif
     #endif
 #else
