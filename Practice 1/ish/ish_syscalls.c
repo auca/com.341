@@ -163,14 +163,14 @@ long ish_read(
         #endif
     #elif defined(__linux__)
         #if defined(__aarch64__)
-            register long result asm("x0");                                      
+            register long result asm("x0");
 
-            __asm__ __volatile__ (                                               
-                "mov x8, #0x3F\n\t"                                              
-                "svc #0x0"                                                       
-                : "=r" (result)                                                  
-                : : "x8"                                                         
-            );                                                                   
+            __asm__ __volatile__ (
+                "mov x8, #0x3\n\t"
+                "svc #0x0"
+                : "=r" (result)
+                : : "x8"
+            );
 
             return result;
         #elif defined(__arm__)
@@ -184,6 +184,7 @@ long ish_read(
             );
 
             return result;
+
         #endif
     #endif
 #else
@@ -222,11 +223,25 @@ int ish_chdir(const char *path)
         #endif
     #elif defined(__linux__)
         #if defined(__aarch64__)
+            register long result asm("x0");
 
-            return -1;
+            __asm__ __volatile__ (
+                "mov x8, #0xc\n\t"
+                "svc #0x0"
+                : "=r" (result)
+                : : "x8"
+            );
+            return result;
         #elif defined(__arm__)
+            register long result asm("r0");
 
-            return -1;
+            __asm__ __volatile__ (
+                "mov r7, #0xc\n\t"
+                "swi #0x0"
+                : "=r" (result)
+                : : "r7"
+            );
+            return result;
         #endif
     #endif
 #else
@@ -259,9 +274,25 @@ void ish_exit(int status)
         #endif
     #elif defined(__linux__)
         #if defined(__aarch64__)
+            register long result asm("x0");
 
+            __asm__ __volatile__ (
+                "mov x8, #0x1\n\t"
+                "svc #0x0"
+                : "=r" (result)
+                : : "x8"
+            );
+            return result;
         #elif defined(__arm__)
+            register long result asm("r0");
 
+            __asm__ __volatile__ (
+                "mov r7, #0x1\n\t"
+                "swi #0x0"
+                : "=r" (result)
+                : : "r7"
+            );
+            return result;
         #endif
     #endif
 #endif
@@ -303,11 +334,25 @@ int ish_stat(const char *path, void *stat_result)
             AT_FDCWD (-100) to simulate the work of `stat`.
         */
         #if defined(__aarch64__)
+            register long result asm("x0");
 
-            return -1;
+            __asm__ __volatile__ (
+                "mov x8, #0x6a\n\t"
+                "svc #0x0"
+                : "=r" (result)
+                : : "x8"
+            );
+            return result;
         #elif defined(__arm__)
+            register long result asm("r0");
 
-            return -1;
+            __asm__ __volatile__ (
+                "mov r7, #0x6a\n\t"
+                "swi #0x0"
+                : "=r" (result)
+                : : "r7"
+            );
+            return result;
         #endif
     #endif
 #else
@@ -351,11 +396,25 @@ int ish_open(const char *path, int flags)
             AT_FDCWD (-100) to simulate the work of `open`.
         */
         #if defined(__aarch64__)
+            register long result asm("x0");
 
-            return -1;
+            __asm__ __volatile__ (
+                "mov x8, #0x5\n\t"
+                "svc #0x0"
+                : "=r" (result)
+                : : "x8"
+            );
+            return result;
         #elif defined(__arm__)
+            register long result asm("r0");
 
-            return -1;
+            __asm__ __volatile__ (
+                "mov r7, #0x5\n\t"
+                "swi #0x0"
+                : "=r" (result)
+                : : "r7"
+            );
+            return result;
         #endif
     #endif
 #else
@@ -406,11 +465,25 @@ int ish_creat(const char *path, unsigned int mode)
                     0x0200  | 0x0400  | 0x0001 = 0x601
         */
         #if defined(__aarch64__)
+            register long result asm("x0");
 
-            return -1;
+            __asm__ __volatile__ (
+                "mov x8, #0x8\n\t"
+                "svc #0x0"
+                : "=r" (result)
+                : : "x8"
+            );
+            return result;
         #elif defined(__arm__)
+            register long result asm("r0");
 
-            return -1;
+            __asm__ __volatile__ (
+                "mov r7, #0x8\n\t"
+                "swi #0x0"
+                : "=r" (result)
+                : : "r7"
+            );
+            return result;
         #endif
     #elif defined(__linux__)
         /*
@@ -467,11 +540,25 @@ int ish_dup2(int old_file_descriptor, int new_file_descriptor)
             simulate the work of `dup2`.
         */
         #if defined(__aarch64__)
+            register long result asm("x0");
 
-            return -1;
+            __asm__ __volatile__ (
+                "mov x8, #0x3f\n\t"
+                "svc #0x0"
+                : "=r" (result)
+                : : "x8"
+            );
+            return result;
         #elif defined(__arm__)
+            register long result asm("r0");
 
-            return -1;
+            __asm__ __volatile__ (
+                "mov r7, #0x3f\n\t"
+                "swi #0x0"
+                : "=r" (result)
+                : : "r7"
+            );
+            return result;
         #endif
     #endif
 #else
@@ -510,11 +597,25 @@ int ish_close(int file_descriptor)
         #endif
     #elif defined(__linux__)
         #if defined(__aarch64__)
+            register long result asm("x0");
 
-            return -1;
+            __asm__ __volatile__ (
+                "mov x8, #0x6\n\t"
+                "svc #0x0"
+                : "=r" (result)
+                : : "x8"
+            );
+            return result;
         #elif defined(__arm__)
+            register long result asm("r0");
 
-            return -1;
+            __asm__ __volatile__ (
+              "mov r7, #0x6\n\t"
+              "swi #0x0"
+              : "=r" (result)
+              : : "r7"
+            );
+            return result;
         #endif
     #endif
 #else
@@ -558,11 +659,25 @@ int ish_fork()
             flags parameter set to SIGCHLD (17) to simulate the work of `fork`.
         */
         #if defined(__aarch64__)
+            register long result asm("x0");
 
-            return -1;
+            __asm__ __volatile__ (
+                "mov x8, #0x2\n\t"
+                "svc #0x0"
+                : "=r" (result)
+                : : "x8"
+            );
+            return result;
         #elif defined(__arm__)
+            register long result asm("r0");
 
-            return -1;
+            __asm__ __volatile__ (
+                "mov r7, #0x2\n\t"
+                "swi #0x0"
+                : "=r" (result)
+                : : "r7"
+            );
+            return result;
         #endif
     #endif
 #else
@@ -605,11 +720,25 @@ int ish_execve(
         #endif
     #elif defined(__linux__)
         #if defined(__aarch64__)
+            register long result asm("x0");
 
-            return -1;
+            __asm__ __volatile__ (
+                "mov x8, #0xb\n\t"
+                "svc #0x0"
+                : "=r" (result)
+                : : "x8"
+            );
+            return result;
         #elif defined(__arm__)
+            register long result asm("r0");
 
-            return -1;
+            __asm__ __volatile__ (
+                "mov r7, #0xb\n\t"
+                "swi #0x0"
+                : "=r" (result)
+                : : "r7"
+            );
+            return result;
         #endif
     #endif
 #else
@@ -629,8 +758,7 @@ int ish_waitpid(int pid, int *status, int options)
             return -1;
         #endif
     #elif defined(__linux__)
-        #if defined(__x86_64__)
-
+        #if defined(__aarch64__)
             return -1;
         #elif defined(__i386__)
 
@@ -648,11 +776,25 @@ int ish_waitpid(int pid, int *status, int options)
         #endif
     #elif defined(__linux__)
         #if defined(__aarch64__)
+            register long result asm("x0");
 
-            return -1;
+            __asm__ __volatile__ (
+              "mov x8, #0x118\n\t"
+              "svc #0x0"
+              : "=r" (result)
+              : : "x8"
+            );
+            return result;
         #elif defined(__arm__)
+            register long result asm("r0");
 
-            return -1;
+            __asm__ __volatile__ (
+                "mov r7, #0x118\n\t"
+                "swi #0x0"
+                : "=r" (result)
+                : : "r7"
+            );
+            return result;
         #endif
     #endif
 #else
@@ -695,11 +837,25 @@ long ish_write(
         #endif
     #elif defined(__linux__)
         #if defined(__aarch64__)
+            register long result asm("x0");
 
-            return -1;
+            __asm__ __volatile__ (
+              "mov x8, #0x4\n\t"
+              "svc #0x0"
+              : "=r" (result)
+              : : "x8"
+            );
+            return result;
         #elif defined(__arm__)
+            register long result asm("r0");
 
-            return -1;
+            __asm__ __volatile__ (
+                "mov r7, #0x4\n\t"
+                "swi #0x0"
+                : "=r" (result)
+                : : "r7"
+            );
+            return result;
         #endif
     #endif
 #else
