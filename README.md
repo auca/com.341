@@ -20,6 +20,10 @@ View the screen of the instructor's machine
 
 * <https://hangouts.google.com/hangouts/_/ytl/7C0gVa9qG2l5F7UAoVx5N-GMT-BikKbn2lhKJMaq2fU=?hl=en_US>
 
+## Contact Collection Form
+
+* <https://docs.google.com/spreadsheets/d/1Xx_5-lGgcIvh20YCFooZm5BcNW62k4Iu_gnD2cy8CMM/edit?usp=sharing>
+
 ## Recordings
 
 View previous class recordings
