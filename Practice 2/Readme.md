@@ -207,7 +207,7 @@ To exit from a virtual terminal
 
 43. Copy system call entry points into the kernel source tree.
 
-        cp -R ~/task_02/ubuntu-*/task_info ~/ubuntu-*/
+        cp -R ~/Practice\ 2/ubuntu-*/task_info ~/ubuntu-*/
 
 44. Study implementation of two system calls in `task_info/get_pids.c` and
     `task_info/get_task_info.c`. Take a look at the structure passed between
