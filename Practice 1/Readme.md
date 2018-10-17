@@ -36,12 +36,12 @@ The CPU architecture selected for this year is ARMv7.
   need to implement a number of system calls in assembly language for the CPU at
   hand for a simple interactive shell.
   
-* Third, you have to do the same on the x86-64 architecture. You can use the QEMU
-  [x86-64 environment](https://github.com/auca/com.341/tree/master/Practice%201/debian/amd64)
+* Third, for extra points you have to do the same on the x86-64 architecture. You
+  can use the QEMU [x86-64 environment](https://github.com/auca/com.341/tree/master/Practice%201/debian/amd64)
   or setup any Debian-based system on a PC or virtual machine on your own.
 
-* At the end, you need to submit your solutions to our server with Git.
+* At the end, you need to submit your solutions to the given private git repository.
 
 ### Deadlines
 
-You will have two weeks from the announcement date to finish your work.
+You will have three weeks from the announcement date to finish your work.
