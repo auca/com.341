@@ -418,12 +418,13 @@ To exit from a virtual terminal
     the Linux source directory.
 
     To restart an unsuccessful build, fix problems in your sources and start the
-    build system again.
+    build system again. Add a note to `<last name>_<first letter of the first name>-time.txt`
+    that the timing is for a partial recompilation.
 
-        fakeroot debian/rules binary-perarch \
-                              binary-indep   \
-                              binary-headers \
-                              binary-generic
+        time fakeroot debian/rules binary-perarch \
+                                   binary-indep   \
+                                   binary-headers \
+                                   binary-generic
 
     To recompile the kernel with new changes after a successful build, remove a
     stamp file to notify the build system that kernel sources were changed.
@@ -431,10 +432,10 @@ To exit from a virtual terminal
 
         rm debian/stamps/stamp-build-generic
 
-        fakeroot debian/rules binary-perarch \
-                              binary-indep   \
-                              binary-headers \
-                              binary-generic
+        time fakeroot debian/rules binary-perarch \
+                                   binary-indep   \
+                                   binary-headers \
+                                   binary-generic
 
 60. Go to the parent directory.
 
