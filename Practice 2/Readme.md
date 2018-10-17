@@ -61,7 +61,7 @@ To exit from a virtual terminal
 2. Download and install [Oracle VirtualBox](https://goo.gl/sIjvXQ), a
    virtualizer for x86 hardware.
 
-3. Download an installation image for [Ubuntu 16.10](https://goo.gl/AiXIJ3).
+3. Download an installation image for [Ubuntu 16.10](http://old-releases.ubuntu.com/releases/16.10).
 
 4. Open Oracle VirtualBox and open a new machine creation dialog by clicking on
    the 'New' button on the toolbar.
@@ -160,9 +160,9 @@ To exit from a virtual terminal
 
         sudo apt install git make gcc ncurses-dev
 
-33. Get the task sources.
+33. Upload the `Practice 2` directory to the virtual machine.
 
-        git clone 'ssh://<AUCA Login>@auca.space:/~/os/task_02.git'
+        scp -P 2222 -r 'Practice 2' <the user name specified during installation>@127.0.0.1:~/
 
 34. Go to the directory with sources of the process information utility
     "tasks".
@@ -401,17 +401,21 @@ To exit from a virtual terminal
     configuration and exit.
 
 59. Start the kernel build process. A successful build will produce multiple
-    `.deb` packages in the parent directory.
+    `.deb` packages in the parent directory. Time the the process.
 
-        fakeroot debian/rules binary-perarch \
-                              binary-indep   \
-                              binary-headers \
-                              binary-generic
+        time fakeroot debian/rules binary-perarch \
+                                   binary-indep   \
+                                   binary-headers \
+                                   binary-generic
 
     The compilation process can take a lot of time. Compiled objects can use up
     to 10 gigabytes of disk space. The Debian build system not only builds the
     kernel but also packs everything into a set of installable `.deb` packages.
     All compilation errors will appear at this stage.
+    
+    Put information about the total compilation time into a file
+    `<last name>_<first letter of the first name>-time.txt` in the root of
+    the Linux source directory.
 
     To restart an unsuccessful build, fix problems in your sources and start the
     build system again.
@@ -507,19 +511,9 @@ To exit from a virtual terminal
 
 ### Submitting Work
 
-Write a report outlining the most important steps of your work. For every step
-include some basic description and a screenshot of your execution environment.
-
-The final step should include a screenshot of the list of debian packages in
-the home directory and a screenshot of the running _tasks_ program.
-
-Include the introduction chapter outlining your execution environment (e.g., the
-name of the virtualization system, or the name of the cloud platform, and so on).
-
-Include conclusion outlining the challanges that you have experienced during the
-project with information on how you were able to resolve them.
-
-Send the report to <toksaitov_d@auca.kg> before the deadline.
+You will get a git remote link to push your modified Linux sources.
+Ensure that the `<last name>-<first letter of the first name>-time.txt`
+is included with your commit. Push the changes before the deadline.
 
 ### Deadlines
 
@@ -529,7 +523,7 @@ You will have two weeks from the announcement date to finish your work.
 
 * [Linux Cross Reference](http://lxr.free-electrons.com)
 
-* [Linux Documentation, Adding a New System Call](https://github.com/torvalds/linux/blob/master/Documentation/adding-syscalls.txt)
+* [Linux Documentation, Adding a New System Call](https://github.com/torvalds/linux/blob/6f0d349d922ba44e4348a17a78ea51b7135965b1/Documentation/process/adding-syscalls.rst)
 
 * [Linux Filesytem Hierarchy, /proc](http://www.tldp.org/LDP/Linux-Filesystem-Hierarchy/html/proc.html)
 
