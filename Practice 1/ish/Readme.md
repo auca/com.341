@@ -166,7 +166,7 @@
 
         git commit -am "Implement system calls <system call name>, ..."
 
-2. Connect to the instructor's remote and submit your work.
+2. Connect to the given private remote repository and submit your work.
 
         git remote add origin <TBD: the remote will be announced in class>
         git push origin master
