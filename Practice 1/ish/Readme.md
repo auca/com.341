@@ -32,7 +32,7 @@
 
         ssh -p 2222 user@127.0.0.1
 
-7. Go into the newly created directory `task_01`.
+7. Go into the newly created directory `ish_<arch>`.
 
         cd ish_<arch>
 
