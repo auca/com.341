@@ -24,7 +24,7 @@ macOS and Ubuntu Linux have Bash and basic Unix programs installed by default.
 
 The goal of the task is to write code to communicate with the kernel of an
 operating system through machine instructions of a particular CPU architecture.
-The CPU architecture selected for this year is ARMv7.
+The CPU architecture selected for this year is ARMv8.
 
 * [First](https://github.com/auca/com.341/tree/master/Practice%201/debian/arm64),
   you need to prepare an execution environment on you personal computer (with an
