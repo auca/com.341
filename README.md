@@ -18,7 +18,7 @@ participation grade
 
 View the screen of the instructor's machine
 
-* <https://hangouts.google.com/hangouts/_/ytl/7C0gVa9qG2l5F7UAoVx5N-GMT-BikKbn2lhKJMaq2fU=?hl=en_US>
+* <https://hangouts.google.com/hangouts/_/ytl/cHZcsBEa0-6cpf7Tr-_BzSTbYgReBf0d_3FTPvkvtCc=?hl=en_US>
 
 ## Contact Collection Form
 
