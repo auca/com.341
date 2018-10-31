@@ -505,6 +505,7 @@ To exit from a virtual terminal
     and `<last name>-<first letter of the first name>-home.txt` files.
 
         git rm -rf .git
+        git init
         git add task_info/                                            \
                 init/Kconfig                                          \
                 include/linux/syscalls.h                              \
