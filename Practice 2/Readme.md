@@ -504,7 +504,7 @@ To exit from a virtual terminal
     to put a proper name for the `<last name>-<first letter of the first name>-time.txt`
     and `<last name>-<first letter of the first name>-home.txt` files.
 
-        git rm -rf .git
+        rm -rf .git
         git init
         git add task_info/                                            \
                 init/Kconfig                                          \
