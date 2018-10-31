@@ -506,17 +506,17 @@ To exit from a virtual terminal
 
         rm -rf .git
         git init
-        git add task_info/                                            \
-                init/Kconfig                                          \
-                include/linux/syscalls.h                              \
-                include/uapi/asm-generic/unistd.h                     \
-                arch/x86/entry/syscalls/syscall_32.tbl                \
-                arch/x86/entry/syscalls/syscall_64.tbl                \
-                kernel/sys_ni.c                                       \
-                Makefile                                              \
-                debian.master/changelog                               \
-                <last name>-<first letter of the first name>-time.txt \
-                <last name>-<first letter of the first name>-home.txt
+        git add task_info/                             \
+                init/Kconfig                           \
+                include/linux/syscalls.h               \
+                include/uapi/asm-generic/unistd.h      \
+                arch/x86/entry/syscalls/syscall_32.tbl \
+                arch/x86/entry/syscalls/syscall_64.tbl \
+                kernel/sys_ni.c                        \
+                Makefile                               \
+                debian.master/changelog
+        git add <last name>-<first letter of the first name>-time.txt
+        git add <last name>-<first letter of the first name>-home.txt
 
         git commit -m "Add a 'task_info' subsystem"
 
