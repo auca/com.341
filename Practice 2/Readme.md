@@ -496,25 +496,33 @@ To exit from a virtual terminal
 
         cd ~/ubuntu-*
 
-71. Create a snapshot of all your changes.
+71. Create a file listing of the home directory.
 
-        git add task_info/                             \
-                init/Kconfig                           \
-                include/linux/syscalls.h               \
-                include/uapi/asm-generic/unistd.h      \
-                arch/x86/entry/syscalls/syscall_32.tbl \
-                arch/x86/entry/syscalls/syscall_64.tbl \
-                kernel/sys_ni.c                        \
-                Makefile                               \
-                debian.master/changelog
+        ls ../ > <last name>-<first letter of the first name>-home.txt
 
-        git commit -m "custom: Add a 'task_info' subsystem"
+72. Create a new repository with all the modified files. Don't forget
+    to put a proper name for the `<last name>-<first letter of the first name>-time.txt`
+    and `<last name>-<first letter of the first name>-home.txt` files.
+
+        git rm -rf .git
+        git add task_info/                                            \
+                init/Kconfig                                          \
+                include/linux/syscalls.h                              \
+                include/uapi/asm-generic/unistd.h                     \
+                arch/x86/entry/syscalls/syscall_32.tbl                \
+                arch/x86/entry/syscalls/syscall_64.tbl                \
+                kernel/sys_ni.c                                       \
+                Makefile                                              \
+                debian.master/changelog                               \
+                <last name>-<first letter of the first name>-time.txt \
+                <last name>-<first letter of the first name>-home.txt
+
+        git commit -m "Add a 'task_info' subsystem"
 
 ### Submitting Work
 
 You will get a git remote link to push your modified Linux sources.
-Ensure that the `<last name>-<first letter of the first name>-time.txt`
-is included with your commit. Push the changes before the deadline.
+Push the changes before the deadline.
 
 ### Deadlines
 
