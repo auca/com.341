@@ -35,8 +35,8 @@ Use the command `echo $?` in your shell to test the `true` and `false` commands.
 * `touch`
 * `mkdir`
 * `mv`
-* `cp`
 * `rm`
+* `cp`
 
 ## Lab #3, Processes
 
