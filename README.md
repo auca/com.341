@@ -27,18 +27,16 @@ View previous class recordings
 ### Lectures
 
 * <https://www.youtube.com/playlist?list=PLIWindejDy9DzUY0NAzPTyw3Q17SxoU90>
-* <https://www.youtube.com/playlist?list=PLHcEzCb_lW6dNfgtZxyPKLWwh_vOuVKDH>
+* <https://www.youtube.com/playlist?list=PLHcEzCb_lW6cpg_exUWNe7FbQ4n-Mr8rt>
 
 ### Labs
 
 #### Group A
 
 * <https://www.youtube.com/playlist?list=PLIWindejDy9DWh91wSEW4jspiX9laqfYQ>
+* <https://www.youtube.com/playlist?list=PLHcEzCb_lW6dNfgtZxyPKLWwh_vOuVKDH>
 
 #### Group B
 
 * <https://www.youtube.com/playlist?list=PLIWindejDy9BHBiSWJ_-LNvSHzZEbXQad>
-
-## Midterm SignUp Form
-
-* <https://docs.google.com/spreadsheets/d/1CTXYr4ZtGBMXRKh4fphIoS3ib7DLeSed4mk48YpfVcM/edit?usp=sharing>
+* <https://www.youtube.com/playlist?list=PLHcEzCb_lW6dF5ywJetCXTPDTWgY03fwA>
