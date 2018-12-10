@@ -5,7 +5,7 @@
 General course information, time, room and lab numbers, rules, grading, and
 books
 
-* <https://github.com/auca/com.341/blob/master/Syllabus/COM_341_Fall_2017_Syllabus.pdf>
+* <https://github.com/auca/com.341/blob/master/Syllabus/COM_341_Fall_2018_Syllabus.pdf>
 
 ## Class Discussions
 
