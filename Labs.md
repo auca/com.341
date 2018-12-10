@@ -55,6 +55,8 @@ You should use the BSD/POSIX sockets to implement a simple echo-like client/serv
 
 * netcat (`nc`)
 
+You can use the following [C programs](https://github.com/auca/com.463/tree/master/client_server_example) as a template.
+
 ## Extra Points
 
 * Simple clone of `less` that only supports scrolling
