@@ -40,7 +40,3 @@ View previous class recordings
 
 * <https://www.youtube.com/playlist?list=PLIWindejDy9BHBiSWJ_-LNvSHzZEbXQad>
 * <https://www.youtube.com/playlist?list=PLHcEzCb_lW6dF5ywJetCXTPDTWgY03fwA>
-
-## Final Signup Form
-
-* <https://docs.google.com/spreadsheets/d/18evAh1ZOzlDsb1c7KG6g7dJhX8cH8eGCt2sj8YQA8sQ/edit?usp=sharing>
