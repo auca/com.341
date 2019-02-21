@@ -111,6 +111,10 @@ To shutdown the system and exit from QEMU
 sudo poweroff
 ```
 
+If you do not have the `sudo` program, log in as root with the `su` command
+and continue executing instructions from the root account without the `sudo`
+prefix.
+
 ### Installing Additional Software
 
 1. Start the system and log in.
