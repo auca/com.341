@@ -5,20 +5,14 @@
 General course information, time, room and lab numbers, rules, grading, and
 books
 
-* <https://github.com/auca/com.341/blob/master/Syllabus/COM_341_Fall_2018_Syllabus.pdf>
+* TBD
 
 ## Class Discussions
 
 For announcements, student questions and student answers to get the
 participation grade
 
-* <https://piazza.com/auca.kg/fall2018/com341/home>
-
-## Screencast
-
-View the screen of the instructor's machine
-
-* <https://hangouts.google.com/hangouts/_/ytl/VosGil8SPcPXXpjYsw-H2RTE0rfoPaz_9Meq_fccAkw=?hl=en_US>
+* <https://piazza.com/auca.kg/fall2019/com341/home>
 
 ## Recordings
 
@@ -26,17 +20,18 @@ View previous class recordings
 
 ### Lectures
 
-* <https://www.youtube.com/playlist?list=PLIWindejDy9DzUY0NAzPTyw3Q17SxoU90>
-* <https://www.youtube.com/playlist?list=PLHcEzCb_lW6cpg_exUWNe7FbQ4n-Mr8rt>
+* <https://www.youtube.com/playlist?list=PLHcEzCb_lW6dNagG6UxSdzogyw5giRBzw>
 
 ### Labs
 
-#### Group A
+#### Group Monday 12:45
 
-* <https://www.youtube.com/playlist?list=PLIWindejDy9DWh91wSEW4jspiX9laqfYQ>
-* <https://www.youtube.com/playlist?list=PLHcEzCb_lW6dNfgtZxyPKLWwh_vOuVKDH>
+* TBD
 
-#### Group B
+#### Group Monday 14:00
 
-* <https://www.youtube.com/playlist?list=PLIWindejDy9BHBiSWJ_-LNvSHzZEbXQad>
-* <https://www.youtube.com/playlist?list=PLHcEzCb_lW6dF5ywJetCXTPDTWgY03fwA>
+* TBD
+
+#### Group Wednesday 14:00
+
+* TBD
