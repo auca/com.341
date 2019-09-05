@@ -24,14 +24,14 @@ View previous class recordings
 
 ### Labs
 
-#### Group Monday 12:45
+#### Monday 12:45
 
 * TBD
 
-#### Group Monday 14:00
+#### Monday 14:00
 
 * TBD
 
-#### Group Wednesday 14:00
+#### Wednesday 14:00
 
 * TBD
