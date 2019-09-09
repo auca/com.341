@@ -31,7 +31,7 @@ View previous class recordings
 
 #### Monday 14:00
 
-* TBD
+* <https://www.youtube.com/playlist?list=PLHcEzCb_lW6eKhbKe9UNqlZCfVKf-KkbC>
 
 #### Wednesday 14:00
 
