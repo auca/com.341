@@ -3,7 +3,7 @@ Homework
 
 ## Week 1
 
-1. Prepare for a quiz next by reading Chapter 1 in Operating System Concepts, 10th
+1. Prepare for a quiz next week by reading Chapter 1 in Operating System Concepts, 10th
    Edition by Abraham Silberschatz.
 
 2. Read the paper by J. Liedtke, "On Micro-Kernel Construction", Proceedings of
