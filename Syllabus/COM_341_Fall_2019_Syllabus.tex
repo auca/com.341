@@ -1,0 +1,280 @@
+\documentclass[12pt,a4paper,oneside]{article}
+
+\usepackage[margin=3cm]{geometry}
+
+\usepackage{hyperref}
+\hypersetup{
+    pdftitle={COM 341, Operating Systems},%
+    pdfauthor={Toksaitov Dmitrii Alexandrovich},%
+    pdfsubject={Syllabus},%
+    pdfkeywords={COM;}{341;}{syllabus;}{operating;}{systems},%
+    colorlinks,%
+    linkcolor=black,%
+    citecolor=black,%
+    filecolor=black,%
+    urlcolor=black
+}
+
+\newcommand{\R}[1]{\uppercase\expandafter{\romannumeral #1\relax}}
+
+\begin{document}
+
+    \title{COM 341, Operating Systems}
+    \author{
+        American University of Central Asia\\
+        Software Engineering Department
+    }
+    \date{}
+    \maketitle
+
+    \section{Course Information}
+
+        \begin{description}
+            \item[Course Code]\hfill\\
+                COM 341
+            \item[Course ID]\hfill\\
+                3325
+            \item[Prerequisite]\hfill\\
+                None
+            \item[Credits]\hfill\\
+                6
+            \item[Professors, TAs, Time, Place]\hfill\\
+                Lecture (Dmitrii Toksaitov): Monday 10:50--12:05, 220\\
+                Lab (Dmitrii Toksaitov): Monday 12:45--14:00, G31\\
+                Lab (Dmitrii Toksaitov): Monday 14:10--15:25, G31\\
+                Lab (Dmitrii Toksaitov): Wednesday 14:10--15:25, G31\\
+                TA Consultations (Bektur Umarbaev): By appointment
+            \item[Course Repository]\hfill\\
+                \url{https://github.com/auca/com.341}
+            \item[Class Discussions]\hfill\\
+                \url{https://piazza.com/auca.kg/fall2019/com341}
+        \end{description}
+
+    \section{Contact Information}
+
+        \begin{description}
+            \item[Instructor]\hfill\\
+                Toksaitov Dmitrii Alexandrovich\\
+                \href{mailto:toksaitov_d@auca.kg}{toksaitov\_d@auca.kg}
+            \item[Teacher Assistant]\hfill\\
+                Bektur Umarbaev\\
+                \href{mailto:umarbaev_b@auca.kg}{umarbaev\_b@auca.kg}
+            \item[Office]\hfill\\
+                AUCA, room 315
+            \item[Office Hours]\hfill\\
+                By appointment throughout the work week\\
+                Remotely through Skype on Saturday and Sunday from 12:00 to
+                18:00
+        \end{description}
+
+    \section{Course Overview}
+
+        This course introduces students to the fundamentals of operating systems
+        design and implementation. Topics include an overview of the components
+        of an operating system, synchronization, implementation of processes,
+        scheduling algorithms, memory management and file systems. Students will
+        learn basics of the Unix environment, the C programming language, and
+        the ARM/x86 assembly. These technologies will help them to finish lab
+        and project tasks to build common Unix utilities, to study the concept
+        of systems calls, to peak into the inner workings of the Linux kernel,
+        and to implement a simple Fuse file system.
+
+        As a result, students should be able to research and analyze the
+        functioning of the information technology systems, improve their skills
+        using programming languages for software design, development, and
+        maintenance in accord to the goals of the AUCA Software Engineering
+        Department and the 510300 IT competency standard (including competency
+        elements OK 1–7, ИК 1–7, ПК 1–15).
+
+    \section{Topics Covered}
+
+        \begin{itemize}
+            \item Week 1--2: Introduction, History, OS Concepts Overview, Terminals (6 hours)
+            \item Week 3--5: System Calls (9 hours)
+            \item Week 6: Protection Mechanisms (3 hours)
+            \item Week 7--8: Interprocess Communication (6 hours)
+            \item Week 9--10: Scheduling (6 hours)
+            \item Week 11--12: Virtual Memory Management (6 hours)
+            \item Week 13: Swapping (3 hours)
+            \item Week 14--15: File System Implementation (6 hours)
+            \item Week 16: RAM Disks, Disks (3 hours)
+        \end{itemize}
+
+    \subsection{Lectures}
+
+        Students will have to take midterm and final examinations on topics
+        discussed during lectures. Each examination is in the form of a quiz
+        with a set of open and multiple choice questions.
+
+    \section{Practice Tasks and Labs}
+
+        Students are required to finish 2 practice tasks during the course.
+        These tasks are based on topics discussed during lectures.
+
+        Students will have to finish 10 lab tasks. In every task students will
+        study a common Unix utility and try to implement it on their own.
+
+    \section{Course Project}
+
+        The course project is to develop utilities to service a toy file system
+        to check and defragment it to improve performance.
+
+    \section{Course Materials, Recordings and Screencasts}
+
+        Students will find all the course materials on GitHub. We hope by
+        working with GitHub students will become familiar with the Git version
+        control system and the popular (among developers) GitHub service. Though
+        version control is not the focus of the course, some course tasks may
+        have to be submitted through it on the GitHub Classroom service.
+
+        Every class is screencasted online and recorded to YouTube for
+        students’ convenience. An ability to watch a class remotely MUST NOT be
+        a reason to not attend the class. Active class participation is
+        necessary to succeed on this course.
+
+    \section{Reading}
+
+        \begin{enumerate}
+            \item Operating System Concepts, 10th Edition by Abraham
+            Silberschatz (ISBN-13: 978-1119456339, ISBN-10: 1119456339)
+        \end{enumerate}
+
+        \subsection{Supplemental Reading}
+
+            \begin{enumerate}
+                \item Understanding the Linux kernel, Third Edition by Daniel P.
+                Bovet and Marco Cesati (AUCA Library Call Number: QA76.76.O63
+                B683 2006, ISBN: 978-0596005658)
+                \item Linux Kernel Development, 3rd Edition by Robert Love
+                (ISBN: 978-0672329463)
+                \item Windows Internals, Part 1 (6th Edition) by Mark E.
+                Russinovich and David A. Solomon (AUCA Library Call Number:
+                QA76.76.W56 R885 2012, ISBN: 978-0735648739)
+                \item Windows Internals, Part 2 (6th Edition) by Mark E.
+                Russinovich and David A. Solomon (AUCA Library Call Number:
+                QA76.76.W56 R885 2012, ISBN: 978-0735665873)
+                \item Mac OS X and iOS internals : to the apple's core by
+                Jonathan Levin (AUCA Library Call Number: QA76.774.M33 L48 2013,
+                ISBN: 978-1118057650)
+                \item Mac OS X Internals: A Systems Approach by Amit Singh (AUCA
+                Library Call Number: QA76.76.O63 S564 2007, ISBN:
+                978-0321278548)
+            \end{enumerate}
+
+    \section{Grading}
+
+        \begin{itemize}
+            \item Lecture Midterm (15\%)
+            \item Lecture Final (15\%)
+            \item Practice Midterm (17.5\%)
+            \item Practice Final (22.5\%)
+            \item Course Project (25\%)
+            \item Piazza Participation (5\%)
+        \end{itemize}
+
+    \section{Scale}
+
+        \begin{itemize} \itemsep-10pt \parskip0pt \parsep0pt
+            \item[--] 92\%--100\%: A\\
+            \item[--] 85\%--91\%: A-\\
+            \item[--] 80\%--84\%: B+\\
+            \item[--] 75\%--79\%: B\\
+            \item[--] 70\%--74\%: B-\\
+            \item[--] 65\%--69\%: C+\\
+            \item[--] 60\%--64\%: C\\
+            \item[--] 55\%--59\%: C-\\
+            \item[--] 50\%--54\%: D+\\
+            \item[--] 45\%--49\%: D\\
+            \item[--] 40\%--44\%: D-\\
+            \item[--] Less than 40\%: F
+        \end{itemize}
+
+    \section{Rules}
+
+        Students are required to follow the rules of conduct of the Software
+        Engineering Department and American University of Central Asia.
+
+    \subsection{Participation}
+
+        Active work during the class may be awarded with up to 5 extra points at
+        the instructor’s discretion.
+
+        Poor student performance during a class can lead to up to 5 points being
+        deducted from the final grade.
+
+        Instructors may conduct pop-checks during classes at random without
+        prior notice. Students MUST be ready for every class in order not to
+        loose points.
+
+    \subsection{Attendance}
+
+        Missing more than three classes without a reason will result in 10
+        points being deducted from the student for every day. If a student has
+        health/family/personal emergency, he MUST notify the instructor in
+        advance (e.g., through e-mail). The student MUST also provide a valid
+        proof afterwards. Without a prior notice and a valid proof the miss will
+        still be counted.
+
+    \subsection{Questions}
+
+        We believe that a question from one student is most likely a question
+        that other students are also interested in. That is why we encourage
+        students to use Piazza to ask questions in public that other students
+        can see and answer and NOT ask them through E-mail in private UNLESS the
+        question itself is about private matters to discuss with the professor.
+
+    \subsection{Late Policy}
+
+        Late submissions and late exams are not allowed. Exceptions may be made
+        at a discretion of the professor only in force-majeure circumstances.
+
+    \subsection{Incomplete}
+
+        As with late exams, the grade \textit{I} may be awarded only in special
+        circumstances. The student must start discussion on getting the grade I
+        with the instructors in advance and not during the last week before the
+        final exams.
+
+    \subsection{Academic Honesty}
+
+        Plagiarism can be defined as “an act or an example of copying or
+        stealing someone else’s words or ideas and appropriating them as one’s
+        own”. The concept of plagiarism applies to all tasks and their
+        components, including program code, abstracts, reports, graphs,
+        statistical tables, etc.
+
+        In addition to being unethical, this indicates that the student has not
+        studied the given material. Tasks written from somewhere for 10\% or
+        less will be assessed accordingly or will receive a 0 at the discretion
+        of the teacher. If plagiarism is more than 10\%, the case will be
+        transferred to the AUCA Disciplinary Committee.
+
+        Students are not recommended to memorize before exams, as this is a
+        difficult and inefficient way to learn; and since practice exams consist
+        of open questions designed to test a student’s analytical skills,
+        memorization invariably leads to the fact that the answers are
+        inappropriate and of poor quality.
+
+        On this course team work is NOT encouraged. The same blocks of code or
+        similar structural pieces in separate submissions will be considered as
+        academic dishonesty and all parties will get zero for the task.
+
+        The following are examples of some common acts of plagiarism:
+
+        \begin{enumerate}
+            \item Representing the work of others as their own
+            \item Using other people's ideas or phrases without specifying the
+                  author
+            \item Copying code snippets, sentences, phrases, paragraphs or ideas
+                  from other people's works,published or unpublished, without
+                  referring to the author
+            \item Replacing selected words from a passage and using them as your
+                  own
+            \item Copying from any type of multimedia (graphics, audio, video,
+                  Internet streams), computer programs, graphs or diagrams from
+                  other people's works without representation of authorship
+            \item Buying work from a website or from another source and
+                  presenting it as your own work
+        \end{enumerate}
+
+\end{document}
