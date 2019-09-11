@@ -35,7 +35,7 @@ View previous class recordings
 
 #### Wednesday 14:00
 
-* TBD
+* <https://www.youtube.com/playlist?list=PLHcEzCb_lW6debvv1Rxc6JUpVq6FjTqZm>
 
 ## Registration
 
