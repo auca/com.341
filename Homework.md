@@ -21,3 +21,5 @@ Homework
 2. Read the paper by Dawson R. Engler, Frans Kaashoek and James O'Toole, "Exokernel: An Operating System Architecture for Application-Level Resource Management ", Proceedings of the 15th ACM Symposium on Operating System Principles, ACM, December 1995.
 
 3. Start reading requirements for [Practice 1](https://github.com/auca/com.341/tree/master/Practice%201)
+
+4. Rewrite `yes` by calling the system call functions such as `write` directly.
