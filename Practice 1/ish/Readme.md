@@ -1,5 +1,6 @@
-### COM 341, Operating Systems
-# Practice Task #1, System Calls
+COM 341, Operating Systems
+==========================
+# Practice Task #1: System Calls
 
 ### Initial Steps
 
