@@ -13,3 +13,11 @@ Homework
 
 4. Finish writing the `false`, `true`, and `yes` utilities.
 
+## Week 3
+
+1. Prepare for a quiz next week by reading Chapter 2 in Operating System Concepts, 10th
+   Edition by Abraham Silberschatz.
+
+2. Read the paper by Dawson R. Engler, Frans Kaashoek and James O'Toole, "Exokernel: An Operating System Architecture for Application-Level Resource Management ", Proceedings of the 15th ACM Symposium on Operating System Principles, ACM, December 1995.
+
+3. Start reading requirements for [Practice 1](https://github.com/auca/com.341/tree/master/Practice%201)
