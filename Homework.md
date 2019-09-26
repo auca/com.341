@@ -1,7 +1,7 @@
 Homework
 ========
 
-## Week 1
+## Week 1–2
 
 1. Prepare for a quiz next week by reading Chapter 1 in Operating System Concepts, 10th
    Edition by Abraham Silberschatz.
@@ -13,7 +13,7 @@ Homework
 
 4. Finish writing the `false`, `true`, and `yes` utilities.
 
-## Week 3
+## Week 3–4
 
 1. Prepare for a quiz next week by reading Chapter 2 in Operating System Concepts, 10th
    Edition by Abraham Silberschatz.
