@@ -27,7 +27,7 @@ COM 341, Operating Systems
    The target directory should have the architecture name `arm64` or `amd64` at
    the end of its name.
 
-        scp -r ish user@127.0.0.1:~/ish_<arch>
+        scp -P 2222 -r ish user@127.0.0.1:~/ish_<arch>
 
 6. Log in into the Debian system through SSH.
 
