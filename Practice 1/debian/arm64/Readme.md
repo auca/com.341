@@ -108,7 +108,8 @@ To shutdown the system and exit from QEMU
 ```bash
 # After you have started the system and logged-in with the user name
 # and password specified during the installation process
-sudo poweroff
+su
+systemctl poweroff
 ```
 
 If you do not have the `sudo` program, log in as root with the `su` command
