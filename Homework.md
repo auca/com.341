@@ -23,3 +23,11 @@ Homework
 3. Start reading requirements for [Practice 1](https://github.com/auca/com.341/tree/master/Practice%201)
 
 4. Rewrite `yes` by calling the system call functions such as `write` directly.
+
+## Week 5–6
+
+1. Finish Practice 1.
+
+2. Start reading requirements for [Practice 2](https://github.com/auca/com.341/tree/master/Practice%202)
+
+3. Rewrite `echo` and `cat`.
