@@ -122,7 +122,8 @@ prefix.
 2. Install the GNU C compiler, the GNU Make build system, the GNU Debugger, and
    the Git version control system.
 
-        sudo apt-get install gcc make gdb git
+        su
+        apt-get install gcc make gdb git
 
 4. Shutdown the system.
 
@@ -131,18 +132,19 @@ prefix.
 1. If you experience connectivity issues in the emulated environment, try
    disabling the IPv6 support in the kernel.
 
-        sudo nano /etc/default/grub
+        su
+        nano /etc/default/grub
 
 2. Append `ipv6.disable=1` to the `GRUB_CMDLINE_LINUX` variable and save the
    file.
 
 3. Update the GRUB boot loader.
 
-        sudo update-grub
+        update-grub
 
 4. Restart the system.
 
-        sudo reboot
+        systemctl reboot
 
 ### Cleanup
 
