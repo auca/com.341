@@ -31,3 +31,7 @@ Homework
 2. Start reading requirements for [Practice 2](https://github.com/auca/com.341/tree/master/Practice%202)
 
 3. Rewrite `echo` and `cat`.
+
+4. Prepare for a midterm quiz next week by reading Chapter 1-4 in Operating System Concepts, 10th
+   Edition by Abraham Silberschatz.
+   
