@@ -43,3 +43,10 @@ Contacts, piazza & server data, attendance
 
 * <https://docs.google.com/spreadsheets/d/1JZysm9m440EMrlgm-sN5g8_eBPw3iphEbHXIk2NNK8w/edit?usp=sharing>
 
+## Practice Midterm Signup
+
+* <https://docs.google.com/spreadsheets/d/1xmzi5UIYmOWqkXQGk_pD3PKuBGxbAx8uKxgf9t6rVqk/edit?usp=sharing>
+
+## Practice Midterm Task List
+
+* <https://docs.google.com/spreadsheets/d/1NK88ai5MKTUN1x0899I-9UJgPO_ZxRGmzqpdUyfYFbo/edit?usp=sharing>
