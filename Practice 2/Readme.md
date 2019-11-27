@@ -151,6 +151,8 @@ To exit from a virtual terminal
     `/etc/apt/sources.list` and save it.
 
         sudo nano /etc/apt/sources.list
+        
+    Replace every domain to `old-releases.ubuntu.com`.
 
 31. Update package index and install updates to the system
 
