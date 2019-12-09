@@ -34,12 +34,14 @@ Homework
 
 4. Prepare for the midterm quiz next week by reading Chapter 1-4 in Operating System Concepts, 10th
    Edition by Abraham Silberschatz.
-   
+
 ## Week 11–14
 
-1. Finish Practice 2, 3.
+1. Finish Practice 2
 
-2. Rewrite `ls` and `pwd`, `touch`, `mkdir`.
+2. Start and finish the course project.
 
-3. Prepare for the final quiz next week by reading Chapter 1-5, 9-10, 13 in Operating System Concepts, 10th
+3. Rewrite `ls` and `pwd`, `touch`, `mkdir`.
+
+4. Prepare for the final quiz next week by reading Chapter 1-5, 9-10, 13 in Operating System Concepts, 10th
    Edition by Abraham Silberschatz.
