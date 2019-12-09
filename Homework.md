@@ -1,7 +1,7 @@
 Homework
 ========
 
-## Week 1–2
+## Week 1–3
 
 1. Prepare for a quiz next week by reading Chapter 1 in Operating System Concepts, 10th
    Edition by Abraham Silberschatz.
@@ -13,7 +13,7 @@ Homework
 
 4. Finish writing the `false`, `true`, and `yes` utilities.
 
-## Week 3–4
+## Week 4–6
 
 1. Prepare for a quiz next week by reading Chapter 2 in Operating System Concepts, 10th
    Edition by Abraham Silberschatz.
@@ -24,7 +24,7 @@ Homework
 
 4. Rewrite `yes` by calling the system call functions such as `write` directly.
 
-## Week 5–6
+## Week 7–10
 
 1. Finish Practice 1.
 
@@ -32,6 +32,14 @@ Homework
 
 3. Rewrite `echo` and `cat`.
 
-4. Prepare for a midterm quiz next week by reading Chapter 1-4 in Operating System Concepts, 10th
+4. Prepare for the midterm quiz next week by reading Chapter 1-4 in Operating System Concepts, 10th
    Edition by Abraham Silberschatz.
    
+## Week 11–14
+
+1. Finish Practice 2, 3.
+
+2. Rewrite `ls` and `pwd`, `touch`, `mkdir`.
+
+3. Prepare for the final quiz next week by reading Chapter 1-5, 9-10, 13 in Operating System Concepts, 10th
+   Edition by Abraham Silberschatz.
