@@ -99,13 +99,13 @@ To remove compiled files
 
 ## Tasks
 
-### Option #1 (+10 points)
+### Option #1 (+15 points)
 
 Use the provided template `fsck.krffs.c` and finish writing the file system
 check utility. The application should go through the file system structure and
 report about any data inconsistencies. 
 
-### Option #2 (+15 points)
+### Option #2 (+10 points +5 extra)
 
 Use the provided template `defrag.krffs.c` and finish writing the file
 defragmentation utility that rearranges file nodes with their data to the
