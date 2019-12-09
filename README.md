@@ -50,3 +50,11 @@ Contacts, piazza & server data, attendance
 ## Practice Midterm Task List
 
 * <https://docs.google.com/spreadsheets/d/1NK88ai5MKTUN1x0899I-9UJgPO_ZxRGmzqpdUyfYFbo/edit?usp=sharing>
+
+## Practice Final Signup
+
+* <https://docs.google.com/spreadsheets/d/17Q_QyiHspDgX2d3C1GH1CFHvNUjO_HixSfUdiituB8s/edit?usp=sharing>
+
+## Practice Final Task List
+
+* <https://docs.google.com/spreadsheets/d/1moc_A1agOaijeU-UHQP_aCCOjR39MCk-3fFQNVtdMbY/edit?usp=sharing>
