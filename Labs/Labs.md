@@ -30,13 +30,13 @@ Use the command `echo $?` in your shell to test the `true` and `false` commands.
 
 ## Lab #2, File System
 
-* `ls`
 * `pwd`
 * `touch`
 * `mkdir`
 * `mv`
 * `rm`
 * `cp`
+* `ls`
 
 ## Lab #3, Processes
 
