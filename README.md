@@ -27,9 +27,3 @@ View previous class recordings
 #### Friday 12:45
 
 * <https://www.youtube.com/playlist?list=PLHcEzCb_lW6dLj9-a-cHR6s7xF4vVonPG>
-
-## Registration
-
-Contacts, piazza & server data, attendance
-
-* <https://docs.google.com/spreadsheets/d/1qi-oKetOJRHWal5hl4843tfhQEZ4Hc6k7TqawJUNQkU>
