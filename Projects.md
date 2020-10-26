@@ -4,3 +4,6 @@
 
 * <https://github.com/toksaitov/syscall-project>
 
+## Project 2
+
+* <https://github.com/toksaitov/kernel-project>
