@@ -7,3 +7,7 @@
 ## Project 2
 
 * <https://github.com/toksaitov/kernel-project>
+
+## Project 3
+
+* <https://github.com/toksaitov/fs-project>
