@@ -41,11 +41,10 @@ Use the command `echo $?` in your shell to test the `true` and `false` commands.
 ## Lab #3, Processes
 
 * `xargs`
-* `parallel`
 
 ## Lab #4, Threads
 
-You should use the POSIX Threads library to implement a parallel Odd-even Sort.
+You should use the POSIX Threads library to implement a parallel odd-even or merge sort.
 
 * `sort`
 
