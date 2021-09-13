@@ -6,7 +6,7 @@ Operating Systems (COM-341)
 General course information, time, room and lab numbers, rules, grading, and
 books
 
-* <https://github.com/auca/com.341/blob/master/Syllabus/COM_341_Fall_2020_Syllabus.pdf>
+* <https://github.com/auca/com.341/blob/master/Syllabus/COM_341_Fall_2021_Syllabus.pdf>
 
 ## Recordings
 
@@ -14,34 +14,20 @@ View previous class recordings
 
 ### Lectures
 
-#### Monday 12:45
+#### Monday 14:10
 
-* <https://www.youtube.com/playlist?list=PLHcEzCb_lW6fRjzLeNWa6S_4xpbtRDDvo>
+* <https://youtube.com/playlist?list=PLHcEzCb_lW6c5NpaZTgDAredmuJ1CFEit>
 
 ### Labs
 
-#### Monday 12:45
+#### Thursday 12:45
 
-* <https://www.youtube.com/playlist?list=PLHcEzCb_lW6cRhlmq9aOy2IX_YGwPtvjV>
+* <https://youtube.com/playlist?list=PLHcEzCb_lW6cpV9oEGZy29gG-kaDifeOH>
+
+#### Friday 10:50
+
+* <https://youtube.com/playlist?list=PLHcEzCb_lW6dJOZt1x9cPhjWMeFHhbDib>
 
 #### Friday 12:45
 
-* <https://www.youtube.com/playlist?list=PLHcEzCb_lW6dLj9-a-cHR6s7xF4vVonPG>
-
-## Exams
-
-### Practice Midterm Signup
-
-* <https://docs.google.com/spreadsheets/d/1_HpRTWed66NQW65ox30g4kQlZ4zJQrB5envQct8uHMM>
-
-### Practice Midterm Task List
-
-* <https://docs.google.com/spreadsheets/d/1DKr6LvBWDFRyYJjS7Bw-eU837EESxUQzYK5lSZ1sxLA>
-
-### Practice Final Signup
-
-* <https://docs.google.com/spreadsheets/d/1PMaMmVcsNX5bpFKYbVpjc6FsMfcznBjuGqw_qMxx_Jw/edit?usp=sharing>
-
-### Practice Final Task List
-
-* <https://docs.google.com/spreadsheets/d/1WuijJiLrsoNnJbSnbLi9_gNElWQ46mpWJzXWo56htms/edit?usp=sharing>
+* <https://youtube.com/playlist?list=PLHcEzCb_lW6cwjRcI6REaxt8l03Ltnjwx>
