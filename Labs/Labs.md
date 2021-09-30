@@ -22,8 +22,8 @@ function of the program (e.g., outputting error messages).
 
 * `true`
 * `false`
+* 'echo'
 * `yes`
-* `echo`
 * `cat`
 
 Use the command `echo $?` in your shell to test the `true` and `false` commands.
