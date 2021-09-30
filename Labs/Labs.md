@@ -22,7 +22,7 @@ function of the program (e.g., outputting error messages).
 
 * `true`
 * `false`
-* 'echo'
+* `echo`
 * `yes`
 * `cat`
 
