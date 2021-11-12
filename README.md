@@ -31,3 +31,13 @@ View previous class recordings
 #### Friday 12:45
 
 * <https://youtube.com/playlist?list=PLHcEzCb_lW6cwjRcI6REaxt8l03Ltnjwx>
+
+## Exams
+
+### Practice Midterm Signup
+
+* <https://docs.google.com/spreadsheets/d/1318ysa-YU6OADqkciurkn9s3LsHzqXLefak0MXWdTLM/edit?usp=sharing>
+
+### Practice Midterm Task List
+
+* <https://docs.google.com/spreadsheets/d/14xDqZFeinuEqpGm37NqgI4BxR80WSSfTWysCVjvXfmw/edit?usp=sharing>
