@@ -1,43 +1,20 @@
-Operating Systems (COM-341)
-===========================
+Operating Systems
+=================
 
 ## Syllabus
 
-General course information, time, room and lab numbers, rules, grading, and
-books
+General course information, time, rules, grading, and books
 
 * <https://github.com/auca/com.341/blob/master/Syllabus/COM_341_Fall_2021_Syllabus.pdf>
 
 ## Recordings
 
-View previous class recordings
+View this semester's class recordings
 
-### Lectures
+### Friday 12:45
 
-#### Monday 14:10
+* <https://youtube.com/playlist?list=PLHcEzCb_lW6celDpDD7-FIUCKtk0-tLRy>
 
-* <https://youtube.com/playlist?list=PLHcEzCb_lW6c5NpaZTgDAredmuJ1CFEit>
-
-### Labs
-
-#### Thursday 12:45
-
-* <https://youtube.com/playlist?list=PLHcEzCb_lW6cpV9oEGZy29gG-kaDifeOH>
-
-#### Friday 10:50
-
-* <https://youtube.com/playlist?list=PLHcEzCb_lW6dJOZt1x9cPhjWMeFHhbDib>
-
-#### Friday 12:45
+### Friday 14:10
 
 * <https://youtube.com/playlist?list=PLHcEzCb_lW6cwjRcI6REaxt8l03Ltnjwx>
-
-## Exams
-
-### Practice Midterm Signup
-
-* <https://docs.google.com/spreadsheets/d/1318ysa-YU6OADqkciurkn9s3LsHzqXLefak0MXWdTLM/edit?usp=sharing>
-
-### Practice Midterm Task List
-
-* <https://docs.google.com/spreadsheets/d/14xDqZFeinuEqpGm37NqgI4BxR80WSSfTWysCVjvXfmw/edit?usp=sharing>

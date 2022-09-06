@@ -1,4 +1,5 @@
-# Course Projects
+Course Projects
+===============
 
 ## Project 1
 
