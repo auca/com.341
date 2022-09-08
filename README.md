@@ -13,8 +13,8 @@ View this semester's class recordings
 
 ### Friday 12:45
 
-* <https://youtube.com/playlist?list=PLHcEzCb_lW6celDpDD7-FIUCKtk0-tLRy>
+* <https://youtube.com/playlist?list=PLHcEzCb_lW6dWYKAT9n-KQwTdgxOelgu6>
 
 ### Friday 14:10
 
-* <https://youtube.com/playlist?list=PLHcEzCb_lW6cwjRcI6REaxt8l03Ltnjwx>
+* <https://youtube.com/playlist?list=PLHcEzCb_lW6celDpDD7-FIUCKtk0-tLRy>
