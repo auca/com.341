@@ -5,7 +5,7 @@ Operating Systems
 
 General course information, time, rules, grading, and books
 
-* <https://github.com/auca/com.341/blob/master/Syllabus/COM_341_Fall_2023_Syllabus.pdf>
+* <https://github.com/auca/com.341/blob/master/Syllabus/AUCA_COM-341_Fall_2023_Syllabus.pdf>
 
 ## Recordings
 
