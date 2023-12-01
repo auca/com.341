@@ -11,8 +11,8 @@ Course Projects
 
 ## Project 3
 
-* <https://github.com/toksaitov/fs-project>
+* <https://github.com/toksaitov/server-project>
 
 ## Project 4
 
-* <https://github.com/toksaitov/server-project>
+* <https://github.com/toksaitov/fs-project>
