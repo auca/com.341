@@ -51,7 +51,7 @@ To controll the virtual machines from the command line, you will need the follow
 
 Use the following Vagrantfile to create a virtual machine with the Ubuntu 24.04 for lab tasks and most projects.
 
-* [Course Vagrantfile]()
+* [Course Vagrantfile](https://github.com/auca/com.341/blob/master/Other/Vagrantfile)
 
 ## Lab #1, Input and Output
 
