@@ -40,68 +40,18 @@ to use it with our remote server.
 * [Microsoft Visual Studio Code](https://code.visualstudio.com)
 
 This virtualization software and the OS images will allow you to set up your
-development environment on your computer to not depend on the course server. It
-is optional to set it up. You are on your own here as we will not help you
-figure out what to do to get your environment up and running. Internet is full
-of information about the process, though.
+development environment on your computer.
 
-* [Oracle VM VirtualBox](https://www.virtualbox.org)
-* [Ubuntu 22.04 Desktop](https://ubuntu.com/#download) with GUI or the
-  [server](https://ubuntu.com/download/server) version without it
+* [Oracle VM VirtualBox](https://www.virtualbox.org) on Windows, GNU/Linux
+* [VMware Fusion](https://www.vmware.com/products/desktop-hypervisor/workstation-and-fusion) on macOS
 
-Here is the list of commands to prepare your local Ubuntu installation for work:
+To controll the virtual machines from the command line, you will need the following tools.
 
-```bash
-apt update && apt upgrade
-apt install vim git tmux
-apt install man-db manpages-posix manpages-dev
-apt install build-essential g++ gcc-multilib g++multilib gcc-aarch64-linux-gnu libc-dev-arm64-cross
-apt install gdb gdb-multiarch
-apt install cmake radare2
-apt install linux-tools-common linux-tools-generic linux-tools-`uname -r`
-apt install qemu qemu-kvm qemu-system qemu-user qemu-user-binfmt
-echo 'export QEMU_LD_PREFIX="/usr/aarch64-linux-gnu/"' | tee --append /etc/environment
-```
+* [Vagrant](https://www.vagrantup.com)
 
-## Development Environment
+Use the following Vagrantfile to create a virtual machine with the Ubuntu 24.04 for lab tasks and most projects.
 
-To setup, a development environment, open the terminal (for example, through
-`git-bash` on Windows) and run the Secure Copy (`scp`) program to download
-credentials to your machine to login to the course server. Your credentials will
-include public and private RSA cryptographic keys with a configuration file to
-point to our server with your login information. To download the keys, you will
-have to agree with any prompts by typing `yes` and pressing enter. You will also
-have to type the password when prompted. The password will be given to you
-during the class. The passwords will be disabled two weeks after the start of
-the course. Ensure to get your keys before that. You will not be able to see
-your password when you type it. It is normal not to leak it to your command-line
-history file or show it to people nearby. Continue typing the password. If the
-system does not accept your password multiple times, type it into a text editor,
-cut and paste it into the terminal window. Remember that `CTRL+C` and `CTRL+V`
-key combinations do not work in most Unix terminals. You will have to use other
-key combinations that are different for different terminals. Mintty on Windows
-uses `CTRL+INSERT` and `SHIFT+INSERT` by default. macOS terminal users are
-luckier as they can use the standard `COMMAND+C` and `COMMAND+V` key
-combinations.
-
-```bash
-# WARNING: If you have existing .ssh keys or configuration files, make a backup of them first.
-scp -r <AUCA login>@auca.space:~/.ssh ~/
-```
-
-Do not forget to replace `<AUCA login>`, including the `<` and `>` character,
-with your actual AUCA login. For example, `toksaitov_d` would be the text the
-instructor of this course would write to download the keys to access the server.
-
-From now on, you can access the server with all the necessary tools installed by
-issuing the following command in your terminal.
-
-```bash
-ssh auca
-```
-
-To terminate the connection from the remote server, you can issue the `exit`
-command.
+* [Course Vagrantfile]()
 
 ## Lab #1, Input and Output
 

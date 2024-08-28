@@ -1,0 +1,55 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+Vagrant.configure("2") do |config|
+  config.vm.box = "bento/ubuntu-24.04"
+  config.vm.box_version = "202404.26.0"
+  config.vm.network "forwarded_port", guest: 8080, host: 8080
+
+  cpus   = 4      # Lower or increase based on your hardware
+  memory = "4096" # Increase if your hardware permits
+  config.vm.provider "virtualbox" do |vb|
+    vb.gui    = true
+    vb.cpus   = cpus
+    vb.memory = memory
+  end
+  config.vm.provider "vmware_desktop" do |vmware|
+    vmware.gui    = true
+    vmware.cpus   = cpus
+    vmware.memory = memory
+  end
+
+  config.vm.provision "shell", inline: <<-SHELL
+    # Update and upgrade the system
+    sudo apt-get update
+    sudo apt-get upgrade -y
+
+    # Install virtualization tools
+    sudo apt-get install -y open-vm-tools
+
+    # Install basic OS software and documentation for a minimal Ubuntu installation
+    sudo apt install -y strace lsof psmisc htop
+    sudo apt install -y command-not-found tree curl tmux
+    sudo apt install -y man-db manpages-posix manpages-dev
+
+    # Install basic developer tools
+    sudo apt install -y vim git python3 python3-pip pipx
+
+    # Install C/C++ compilers, build systems, and debuggers
+    sudo apt install -y gcc g++ clang
+    sudo apt install -y make cmake
+    sudo apt install -y gdb gdb-multiarch
+
+    # Install the QEMU emulator/virtualizer
+    sudo apt install -y qemu-system qemu-user qemu-user-binfmt qemu-utils
+
+    # Install libraries and tools required by several course projects
+    sudo apt install -y libncurses-dev fuse libfuse-dev pkg-config apache2-utils
+
+    # Uncomment the line below to install a GUI environment (GNOME)
+    # sudo apt-get install -y ubuntu-desktop-minimal open-vm-tools-desktop
+
+    # Cleanup at the end
+    sudo apt autoremove -y
+  SHELL
+end
