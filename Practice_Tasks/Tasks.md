@@ -120,7 +120,7 @@ You can use the following [C programs](https://github.com/auca/com.463/tree/mast
 ### Links
 
 * [Beej's Guide to C Programming](http://beej.us/guide/bgc)
-* [Unix Environment](https://drive.google.com/file/d/0B85z_dQxOMgLNDN3QTFrSmYxZm8/view)
+* [Unix Environment](https://drive.google.com/file/d/0B85z_dQxOMgLNDN3QTFrSmYxZm8/view?usp=sharing&resourcekey=0-M_TMmM3wqZuxQF68g5lIVQ)
 
 ### Books
 
