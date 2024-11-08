@@ -18,8 +18,14 @@ Vagrant.configure("2") do |config|
     vmware.cpus   = cpus
     vmware.memory = memory
   end
+  config.vm.disk :disk, size: "64GB", primary: true
 
   config.vm.provision "shell", inline: <<-SHELL
+    # Take all the disk space available                                          
+    sudo pvresize /dev/sda3                                                      
+    sudo lvresize -l +100%FREE /dev/mapper/ubuntu--vg-ubuntu--lv                 
+    sudo resize2fs /dev/mapper/ubuntu--vg-ubuntu--lv
+
     # Update and upgrade the system
     sudo apt-get update
     sudo apt-get upgrade -y
