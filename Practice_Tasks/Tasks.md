@@ -1,59 +1,29 @@
 Operating Systems, Practice Tasks
 =================================
 
-During labs students will have to practice with various abstractions created by Unix and Unix-like kernels by writing various system utility applications.
-
-Create simple clones of the following common Nix programs. Find out their purpose, their command-line interface, and return values from the system man pages. You do not have to be thorough implementing support for all the features from the manuals. Instead, you should only focus on each program's key functionality.
-
-Though it is mostly discouraged to use platform-specific system calls directly, in this lab, for educational purposes, it is required to mostly utilize only them. Minor exceptions can be allowed for cases not directly related to the key function of the program (e.g., outputting error messages).
-
 ## Developer Tools
 
-The following tool is required to be installed to work on this course. It
-contains the Git version control system that you will use to submit your work to
-the instructor. The Git installation package also includes a virtual terminal
-Mintty, the command interpreter Bash, and an SSH client to connect and work with
-the course server.
+The following tool is required to be installed to work on this course. It contains the Git version control system that you will use to submit your work to the instructor. The Git installation package also includes a virtual terminal Mintty, the command interpreter Bash, and an SSH client to connect and work with the course server.
 
 * [Git SCM](https://git-scm.com)
 
-On macOS, it is recommended to install the official command-line developer tools
-from Apple by opening the `Terminal.app` and running the following command.
+On macOS, it is recommended to install the official command-line developer tools from Apple by opening the `Terminal.app` and running the following command.
 
 ```bash
 xcode-select --install
 ```
 
-The following code editor is optional. It is not required, but it can be helpful
-if you will not feel comfortable working with the command-line interface for
-long periods. You have to install the 'Remote - SSH' extension from the editor
-to use it with our remote server.
+The following code editor is optional. It is not required, but it can be helpful if you will not feel comfortable working with the command-line interface for long periods. You have to install the 'Remote - SSH' extension from the editor to use it with our remote server.
 
 * [Microsoft Visual Studio Code](https://code.visualstudio.com)
 
-This virtualization software and the OS images will allow you to set up your
-development environment on your computer to not depend on the course server. It
-is optional to set it up. You are on your own here as we will not help you
-figure out what to do to get your environment up and running. Internet is full
-of information about the process, though.
+This virtualization software and the OS images will allow you to set up your development environment on your computer to not depend on the course server. It is optional to set it up. You are on your own here as we will not help you figure out what to do to get your environment up and running. Internet is full of information about the process, though.
 
 * [Oracle VM VirtualBox](https://www.virtualbox.org)
-* [Ubuntu 22.04 Desktop](https://ubuntu.com/#download) with GUI or the
+* [Ubuntu 24.04 Desktop](https://ubuntu.com/download/desktop) with GUI or the
   [server](https://ubuntu.com/download/server) version without it
 
-Here is the list of commands to prepare your local Ubuntu installation for work:
-
-```bash
-apt update && apt upgrade
-apt install vim git tmux
-apt install man-db manpages-posix manpages-dev
-apt install build-essential g++ gcc-multilib g++multilib gcc-aarch64-linux-gnu libc-dev-arm64-cross
-apt install gdb gdb-multiarch
-apt install cmake radare2
-apt install linux-tools-common linux-tools-generic linux-tools-`uname -r`
-apt install qemu qemu-kvm qemu-system qemu-user qemu-user-binfmt
-echo 'export QEMU_LD_PREFIX="/usr/aarch64-linux-gnu/"' | tee --append /etc/environment
-```
+You can find the list of software to install in our official course Vagrantfile, available [here](https://github.com/auca/com.341/blob/master/Other/Vagrantfile). [Vagrant](https://developer.hashicorp.com/vagrant) is a powerful and popular tool that allows you to set up development environments based on a given configuration. You can also install all the software listed in the Vagrantfile manually on your machine.
 
 ## Development Environment
 
@@ -74,11 +44,15 @@ ssh auca
 
 To terminate the connection from the remote server, you can issue the `exit` command.
 
-You may have to do additional things for MPI tasks to access a second server called `auca-peer`. Refer to the instructor's suggestions during a class on what to do.
+## Labs
 
-You must use your machine with an Nvidia GPU for CUDA tasks or ask the instructor to prepare a lab machine for you at AUCA.
+During labs students will have to practice with various abstractions created by Unix and Unix-like kernels by writing various system utility applications.
 
-## Lab #1, Input and Output
+Create simple clones of the following common *nix programs. Find out their purpose, their command-line interface, and return values from the system man pages. You do not have to be thorough implementing support for all the features from the manuals. Instead, you should only focus on each program's key functionality.
+
+Though it is mostly discouraged to use platform-specific system calls directly, in this lab, for educational purposes, it is required to mostly utilize only them. Minor exceptions can be allowed for cases not directly related to the key function of the program (e.g., outputting error messages).
+
+### Lab #1, Input and Output
 
 * `true`
 * `false`
@@ -88,7 +62,7 @@ You must use your machine with an Nvidia GPU for CUDA tasks or ask the instructo
 
 Use the command `echo $?` in your shell to test the `true` and `false` commands.
 
-## Lab #2, File System
+### Lab #2, File System
 
 * `pwd`
 * `touch`
@@ -98,17 +72,17 @@ Use the command `echo $?` in your shell to test the `true` and `false` commands.
 * `cp`
 * `ls`
 
-## Lab #3, Processes
+### Lab #3, Processes
 
 * `xargs`
 
-## Lab #4, Threads
+### Lab #4, Threads
 
 You should use the POSIX Threads library to implement a parallel odd-even or merge sort.
 
 * `sort`
 
-## Lab #5, Sockets
+### Lab #5, Sockets
 
 You should use the BSD/POSIX sockets to implement a simple echo-like client/server program.
 
@@ -116,12 +90,12 @@ You should use the BSD/POSIX sockets to implement a simple echo-like client/serv
 
 You can use the following [C programs](https://github.com/auca/com.463/tree/master/client_server_example) as a template.
 
-## Extra Points
+### Extra
 
 * Simple clone of `less` that only supports scrolling
 * Simple clone of `nano` that only supports basic editing
 
-### Documentation
+## Documentation
 
     man yes
     man true
@@ -142,14 +116,14 @@ You can use the following [C programs](https://github.com/auca/com.463/tree/mast
 
     man syscalls
 
-### Links
+## Links
 
 * [Beej's Guide to C Programming](http://beej.us/guide/bgc)
 * [Unix Environment](https://drive.google.com/file/d/0B85z_dQxOMgLNDN3QTFrSmYxZm8/view?usp=sharing&resourcekey=0-M_TMmM3wqZuxQF68g5lIVQ)
 
-### Books
+## Books
 
-#### Contemporary
+### Contemporary
 
 * _C Programming: A Modern Approach, 2nd Edition by K. N. King_
 
@@ -161,7 +135,7 @@ You can use the following [C programs](https://github.com/auca/com.463/tree/mast
 
 * _Programming with POSIX Threads by David R. Butenhof_
 
-#### Classic
+### Classic
 
 * _C Programming Language, 2nd Edition by Brian W. Kernighan, Dennis M.
   Ritchie_
