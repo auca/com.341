@@ -12,3 +12,7 @@ Course Projects
 ## Project 3
 
 * <https://github.com/toksaitov/fs-project>
+
+## Project 4 (Bonus)
+
+* <https://github.com/toksaitov/os-project>
