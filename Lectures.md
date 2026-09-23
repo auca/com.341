@@ -11,5 +11,5 @@ Lectures
 
 ## Practice
 
-1. [Unix Environment](https://drive.google.com/file/d/0B85z_dQxOMgLNDN3QTFrSmYxZm8/view?usp=sharing&resourcekey=0-M_TMmM3wqZuxQF68g5lIVQ)
+1. [Unix Environment](https://docs.google.com/presentation/d/1Iic2dHdIvZe7140XCdJacgSCKNTACLeoJi6GDQt4yDM/edit?usp=sharing)
 2. [System Calls](https://drive.google.com/file/d/0B85z_dQxOMgLbGFxenBCX2pOQ3M/view?usp=sharing&resourcekey=0-miLMi6N8_OoH98mBPlPitw)
